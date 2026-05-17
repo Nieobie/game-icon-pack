@@ -32,7 +32,7 @@ Or download from **Releases** on the right sidebar
 
 
 ## Preview
-<img width="100%" alt="ICONS574-2026 5 12" src="https://github.com/user-attachments/assets/dcabc0da-9c7e-450c-bfa7-5236d42824af" />
+<img width="100%" alt="2" src="https://github.com/user-attachments/assets/4d59553d-fcaa-48f0-8c57-4539ef4bdd9a" />
 
 
 ## License
