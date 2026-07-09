@@ -7,7 +7,7 @@
 - Consistent visual style
 - SVG and PNG formats
 - Padding and no-padding versions
-- Optimized SVG and PNG files sizes
+- Optimized SVG and PNG file sizes
 - Continuously updated
 
 
@@ -25,7 +25,7 @@ Or download from [**Releases**](https://github.com/Nieobie/game-icon-pack/releas
 
 Want to browse and search all icons more easily?
 
-1. Install Node.js.
+1. Install [Node.js](https://nodejs.org/).
 2. Open a terminal in the project folder and run:
 
 ```bash
@@ -51,7 +51,7 @@ If you'd like to mention this pack somewhere, I'd be genuinely grateful, but it'
 
 ## Support
 
-If you found this pack useful, a GitHub Star⭐ would mean a lot.
+If you found this pack useful, a GitHub Star ⭐ would mean a lot.
 
 You can also support me on [**Ko-fi**](https://ko-fi.com/nieobie).
 
