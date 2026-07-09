@@ -21,6 +21,20 @@ Or download from [**Releases**](https://github.com/Nieobie/game-icon-pack/releas
 <img width="100%" alt="ICONS- 2" src="https://github.com/user-attachments/assets/19e559ac-8122-4462-8cb5-fa6253fa5b77" />
 
 
+## Local Preview
+
+Want to browse and search all icons more easily?
+
+1. Install Node.js.
+2. Open a terminal in the project folder and run:
+
+```bash
+node server.js
+```
+
+3. Open **http://localhost:3000** in your browser.
+
+
 ## Requests
 If you have icon requests, suggestions, or ideas, feel free to open an Issue.
 
