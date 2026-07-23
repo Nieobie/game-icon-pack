@@ -1,1 +1,5734 @@
+[
+  // ==================== 1-game ====================
+  {
+    "component_name": "action-points",
+    "visual_features": "纯文本「AP」",
+    "core_semantic": "行动点/行动力",
+    "use_cases": ["回合制游戏行动消耗", "资源显示", "角色属性面板"],
+    "synonyms": ["AP", "action", "行动力", "行动次数"]
+  },
+  {
+    "component_name": "boss",
+    "visual_features": "三个牙、两个角、凶恶眼神",
+    "core_semantic": "Boss 首领/强大敌人",
+    "use_cases": ["关卡末尾Boss战", "副本挑战入口", "Boss血条旁标识"],
+    "synonyms": ["boss", "首领", "大怪", "精英"]
+  },
+  {
+    "component_name": "card",
+    "visual_features": "两张卡叠在一起",
+    "core_semantic": "卡牌（双张）",
+    "use_cases": ["手牌展示", "卡牌游戏中的牌堆", "技能卡图标"],
+    "synonyms": ["card", "手牌", "卡牌", "两张牌"]
+  },
+  {
+    "component_name": "cards",
+    "visual_features": "三张卡叠在一起",
+    "core_semantic": "多张卡牌/牌组",
+    "use_cases": ["卡组管理", "牌库", "多牌选择"],
+    "synonyms": ["cards", "牌组", "多卡", "卡堆"]
+  },
+  {
+    "component_name": "character",
+    "visual_features": "笑脸 😀",
+    "core_semantic": "角色/玩家代表（笑脸）",
+    "use_cases": ["个人资料", "角色选择", "简易头像"],
+    "synonyms": ["character", "角色", "人物", "头像"]
+  },
+  {
+    "component_name": "club-card",
+    "visual_features": "扑克牌梅花（♣）",
+    "core_semantic": "梅花扑克牌",
+    "use_cases": ["卡牌游戏花色显示", "纸牌界面"],
+    "synonyms": ["club", "梅花", "♣", "扑克牌"]
+  },
+  {
+    "component_name": "clubs",
+    "visual_features": "独立梅花符号 ♣",
+    "core_semantic": "梅花花色符号（无牌背景）",
+    "use_cases": ["花色选择", "符号装饰", "游戏UI"],
+    "synonyms": ["club", "梅花符号", "♣"]
+  },
+  {
+    "component_name": "controller-02",
+    "visual_features": "椭圆形轻巧游戏手柄",
+    "core_semantic": "轻便手柄/便携控制器",
+    "use_cases": ["连接手柄提示", "外设设置", "移动游戏操控"],
+    "synonyms": ["controller", "手柄", "游戏操控", "椭圆手柄"]
+  },
+  {
+    "component_name": "controller",
+    "visual_features": "标准游戏手柄 🎮",
+    "core_semantic": "通用游戏控制器",
+    "use_cases": ["游戏开始界面", "手柄设置", "操控说明"],
+    "synonyms": ["gamepad", "手柄", "joypad", "控制器"]
+  },
+  {
+    "component_name": "death",
+    "visual_features": "骷髅头 💀",
+    "core_semantic": "死亡/阵亡状态",
+    "use_cases": ["角色死亡特效", "游戏结束", "危险提示"],
+    "synonyms": ["death", "死亡", "阵亡", "骷髅", "dead"]
+  },
+  {
+    "component_name": "demon-02",
+    "visual_features": "狰狞/邪恶的恶魔（圆角较凶）",
+    "core_semantic": "邪恶恶魔（凶恶版）",
+    "use_cases": ["恶魔敌人", "暗黑主题", "Boss战"],
+    "synonyms": ["demon", "恶魔", "邪恶", "凶恶"]
+  },
+  {
+    "component_name": "demon",
+    "visual_features": "圆润可爱的恶魔",
+    "core_semantic": "可爱恶魔/小恶魔",
+    "use_cases": ["宠物", "友善怪物", "吉祥物"],
+    "synonyms": ["demon", "小恶魔", "可爱恶魔", "宠物"]
+  },
+  {
+    "component_name": "diamond-card",
+    "visual_features": "扑克牌方块（♦）",
+    "core_semantic": "方块扑克牌",
+    "use_cases": ["卡牌游戏花色", "纸牌界面"],
+    "synonyms": ["diamond", "方块", "♦", "扑克牌"]
+  },
+  {
+    "component_name": "diamonds",
+    "visual_features": "独立方块符号 ♦",
+    "core_semantic": "方块花色符号（无牌背景）",
+    "use_cases": ["花色选择", "符号装饰"],
+    "synonyms": ["diamond", "方块符号", "♦"]
+  },
+  {
+    "component_name": "dice-02",
+    "visual_features": "骰子显示2点",
+    "core_semantic": "骰子点数2",
+    "use_cases": ["掷骰子结果", "随机数显示", "桌游"],
+    "synonyms": ["dice 2", "骰子2", "2点"]
+  },
+  {
+    "component_name": "dice-03",
+    "visual_features": "骰子显示3点",
+    "core_semantic": "骰子点数3",
+    "use_cases": ["掷骰子结果", "随机数显示"],
+    "synonyms": ["dice 3", "骰子3", "3点"]
+  },
+  {
+    "component_name": "dice-04",
+    "visual_features": "骰子显示4点",
+    "core_semantic": "骰子点数4",
+    "use_cases": ["掷骰子结果", "随机数显示"],
+    "synonyms": ["dice 4", "骰子4", "4点"]
+  },
+  {
+    "component_name": "dice-05",
+    "visual_features": "骰子显示5点",
+    "core_semantic": "骰子点数5",
+    "use_cases": ["掷骰子结果", "随机数显示"],
+    "synonyms": ["dice 5", "骰子5", "5点"]
+  },
+  {
+    "component_name": "dice-06",
+    "visual_features": "骰子显示6点",
+    "core_semantic": "骰子点数6",
+    "use_cases": ["掷骰子结果", "随机数显示"],
+    "synonyms": ["dice 6", "骰子6", "6点"]
+  },
+  {
+    "component_name": "dice-pair",
+    "visual_features": "一个4点骰子后面还有一个（前后叠放）",
+    "core_semantic": "双骰子/一对骰子",
+    "use_cases": ["双骰投掷", "双倍奖励", "桌游"],
+    "synonyms": ["dice pair", "双骰", "一对骰子"]
+  },
+  {
+    "component_name": "dice",
+    "visual_features": "单个骰子显示1点",
+    "core_semantic": "骰子（基础1点）",
+    "use_cases": ["掷骰子动作", "随机事件", "游戏入口"],
+    "synonyms": ["dice", "骰子", "随机", "掷骰"]
+  },
+  {
+    "component_name": "double",
+    "visual_features": "纯文本「2x」",
+    "core_semantic": "双倍（2倍）",
+    "use_cases": ["双倍经验", "双倍金币", "活动加成"],
+    "synonyms": ["2x", "double", "双倍", "倍数"]
+  },
+  {
+    "component_name": "experience-points",
+    "visual_features": "纯文本「XP」",
+    "core_semantic": "经验值",
+    "use_cases": ["角色升级", "经验条显示", "任务奖励"],
+    "synonyms": ["XP", "经验", "exp", "经验值"]
+  },
+  {
+    "component_name": "female",
+    "visual_features": "♀ 符号",
+    "core_semantic": "女性性别",
+    "use_cases": ["角色性别选择", "个人资料", "性别标识"],
+    "synonyms": ["female", "女性", "♀", "女士"]
+  },
+  {
+    "component_name": "ghost",
+    "visual_features": "幽灵（无嘴巴）",
+    "core_semantic": "幽灵/鬼魂（无嘴版）",
+    "use_cases": ["恐怖游戏", "万圣节", "灵异事件"],
+    "synonyms": ["ghost", "幽灵", "鬼", "无嘴幽灵"]
+  },
+  {
+    "component_name": "halloween",
+    "visual_features": "万圣节南瓜灯 🎃",
+    "core_semantic": "万圣节主题",
+    "use_cases": ["节日活动", "万圣节皮肤", "装饰"],
+    "synonyms": ["halloween", "万圣节", "南瓜", "节日"]
+  },
+  {
+    "component_name": "health-points",
+    "visual_features": "纯文本「HP」",
+    "core_semantic": "生命值",
+    "use_cases": ["血条显示", "角色状态", "治疗物品"],
+    "synonyms": ["HP", "生命", "血", "health"]
+  },
+  {
+    "component_name": "health",
+    "visual_features": "红十字",
+    "core_semantic": "生命/医疗",
+    "use_cases": ["恢复道具", "医疗站", "生命指示"],
+    "synonyms": ["health", "医疗", "十字", "恢复", "治疗"]
+  },
+  {
+    "component_name": "heart-break-02",
+    "visual_features": "心完全分成两半",
+    "core_semantic": "心碎（彻底分开）",
+    "use_cases": ["失去生命", "受伤", "分手/负面状态"],
+    "synonyms": ["heartbreak", "心碎", "损失", "受伤"]
+  },
+  {
+    "component_name": "heart-break",
+    "visual_features": "心裂开但还有一点连着",
+    "core_semantic": "心碎（将断未断）",
+    "use_cases": ["轻微伤害", "感情受伤", "警示"],
+    "synonyms": ["heartbreak", "心碎", "裂开", "受伤"]
+  },
+  {
+    "component_name": "heart-card",
+    "visual_features": "扑克牌红心（♥）",
+    "core_semantic": "红心扑克牌",
+    "use_cases": ["卡牌游戏花色", "纸牌界面"],
+    "synonyms": ["heart", "红心", "♥", "扑克牌"]
+  },
+  {
+    "component_name": "heart",
+    "visual_features": "普通心形 ❤️（较圆润）",
+    "core_semantic": "爱心/喜欢/生命",
+    "use_cases": ["点赞", "收藏", "血量UI", "好感度"],
+    "synonyms": ["heart", "爱心", "喜欢", "❤️"]
+  },
+  {
+    "component_name": "hearts",
+    "visual_features": "扑克牌风格红心 ♥（底部尖锐）",
+    "core_semantic": "红心花色符号（牌风格）",
+    "use_cases": ["花色显示", "符号装饰", "游戏UI"],
+    "synonyms": ["heart", "红心", "♥", "花色"]
+  },
+  {
+    "component_name": "hit-effect",
+    "visual_features": "打击特效（类似💥爆炸星）",
+    "core_semantic": "命中/攻击特效",
+    "use_cases": ["战斗动画", "受击反馈", "攻击提示"],
+    "synonyms": ["hit", "打击", "攻击特效", "爆炸", "💥"]
+  },
+  {
+    "component_name": "level",
+    "visual_features": "纯文本「Lv.」",
+    "core_semantic": "等级/级别",
+    "use_cases": ["角色等级", "关卡等级", "难度选择"],
+    "synonyms": ["level", "等级", "Lv", "级别"]
+  },
+  {
+    "component_name": "mahjong",
+    "visual_features": "麻将牌（红中）",
+    "core_semantic": "麻将/红中",
+    "use_cases": ["棋牌游戏", "麻将桌", "牌类"],
+    "synonyms": ["mahjong", "麻将", "红中", "牌"]
+  },
+  {
+    "component_name": "male",
+    "visual_features": "♂ 符号",
+    "core_semantic": "男性性别",
+    "use_cases": ["角色性别选择", "个人资料", "性别标识"],
+    "synonyms": ["male", "男性", "♂", "先生"]
+  },
+  {
+    "component_name": "mana-points",
+    "visual_features": "纯文本「MP」",
+    "core_semantic": "法力值/魔法值",
+    "use_cases": ["魔法条", "技能消耗", "角色属性"],
+    "synonyms": ["MP", "法力", "魔法", "mana"]
+  },
+  {
+    "component_name": "mana",
+    "visual_features": "蓝色水滴 💧",
+    "core_semantic": "魔法值（图形）",
+    "use_cases": ["魔法恢复", "法力道具", "能量显示"],
+    "synonyms": ["mana", "法力", "魔法", "水滴", "蓝"]
+  },
+  {
+    "component_name": "onefold",
+    "visual_features": "纯文本「1x」",
+    "core_semantic": "单倍（1倍）",
+    "use_cases": ["基础数值", "单倍经验", "无加成"],
+    "synonyms": ["1x", "单倍", "一倍", "原始"]
+  },
+  {
+    "component_name": "puzzle-01",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-02",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-03",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-04",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-05",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-06",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-07",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-08",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-09",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-10",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-11",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "puzzle-12",
+    "visual_features": "拼图碎片（方向/块数不同）",
+    "core_semantic": "拼图块（系列）",
+    "use_cases": ["谜题", "拼图游戏", "任务碎片"],
+    "synonyms": ["puzzle", "拼图", "碎片", "解谜"]
+  },
+  {
+    "component_name": "random-dice",
+    "visual_features": "带问号的正方形（骰子）",
+    "core_semantic": "随机骰子/随机事件",
+    "use_cases": ["随机抽奖", "随机选择", "谜题随机"],
+    "synonyms": ["random", "随机骰", "问号骰", "luck"]
+  },
+  {
+    "component_name": "ranking",
+    "visual_features": "领奖台（左2，中1，右3）",
+    "core_semantic": "排行榜/排名",
+    "use_cases": ["排名展示", "竞技排行", "分数榜"],
+    "synonyms": ["ranking", "排行榜", "排名", "领奖台", "名次"]
+  },
+  {
+    "component_name": "six-sided-dice-02",
+    "visual_features": "骰子显示2点（有边框）",
+    "core_semantic": "六面骰子点数2",
+    "use_cases": ["掷骰子", "随机数"],
+    "synonyms": ["dice 2", "六面骰2"]
+  },
+  {
+    "component_name": "six-sided-dice-03",
+    "visual_features": "骰子显示3点",
+    "core_semantic": "六面骰子点数3",
+    "use_cases": ["掷骰子", "随机数"],
+    "synonyms": ["dice 3", "六面骰3"]
+  },
+  {
+    "component_name": "six-sided-dice-04",
+    "visual_features": "骰子显示4点",
+    "core_semantic": "六面骰子点数4",
+    "use_cases": ["掷骰子", "随机数"],
+    "synonyms": ["dice 4", "六面骰4"]
+  },
+  {
+    "component_name": "six-sided-dice-05",
+    "visual_features": "骰子显示5点",
+    "core_semantic": "六面骰子点数5",
+    "use_cases": ["掷骰子", "随机数"],
+    "synonyms": ["dice 5", "六面骰5"]
+  },
+  {
+    "component_name": "six-sided-dice-06",
+    "visual_features": "骰子显示6点",
+    "core_semantic": "六面骰子点数6",
+    "use_cases": ["掷骰子", "随机数"],
+    "synonyms": ["dice 6", "六面骰6"]
+  },
+  {
+    "component_name": "six-sided-dice",
+    "visual_features": "骰子显示1点",
+    "core_semantic": "六面骰子点数1",
+    "use_cases": ["掷骰子", "随机数"],
+    "synonyms": ["dice 1", "六面骰1"]
+  },
+  {
+    "component_name": "skill-points",
+    "visual_features": "纯文本「SP」",
+    "core_semantic": "技能点/技能值",
+    "use_cases": ["技能学习", "技能消耗", "角色成长"],
+    "synonyms": ["SP", "技能点", "skill", "技能"]
+  },
+  {
+    "component_name": "skull",
+    "visual_features": "骷髅头（与death略有不同）",
+    "core_semantic": "骷髅/危险/海盗",
+    "use_cases": ["危险提示", "海盗主题", "死亡标志"],
+    "synonyms": ["skull", "骷髅", "危险", "海盗"]
+  },
+  {
+    "component_name": "spade-card",
+    "visual_features": "扑克牌黑桃（♠）",
+    "core_semantic": "黑桃扑克牌",
+    "use_cases": ["卡牌游戏花色", "纸牌界面"],
+    "synonyms": ["spade", "黑桃", "♠", "扑克牌"]
+  },
+  {
+    "component_name": "spades",
+    "visual_features": "独立黑桃符号 ♠",
+    "core_semantic": "黑桃花色符号（无牌背景）",
+    "use_cases": ["花色选择", "符号装饰"],
+    "synonyms": ["spade", "黑桃符号", "♠"]
+  },
+  {
+    "component_name": "stamina",
+    "visual_features": "闪电 ⚡",
+    "core_semantic": "体力/耐力",
+    "use_cases": ["体力值", "行动消耗", "能量条"],
+    "synonyms": ["stamina", "体力", "耐力", "闪电", "精力"]
+  },
+  {
+    "component_name": "tetris-i",
+    "visual_features": "俄罗斯方块 I 形（长条四格）",
+    "core_semantic": "I形方块",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris I", "I形", "长条"]
+  },
+  {
+    "component_name": "tetris-j",
+    "visual_features": "俄罗斯方块 J 形",
+    "core_semantic": "J形方块",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris J", "J形"]
+  },
+  {
+    "component_name": "tetris-l",
+    "visual_features": "俄罗斯方块 L 形",
+    "core_semantic": "L形方块",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris L", "L形"]
+  },
+  {
+    "component_name": "tetris-o",
+    "visual_features": "俄罗斯方块 O 形（正方形）",
+    "core_semantic": "O形方块（方形）",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris O", "O形", "方形"]
+  },
+  {
+    "component_name": "tetris-s",
+    "visual_features": "俄罗斯方块 S 形",
+    "core_semantic": "S形方块",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris S", "S形"]
+  },
+  {
+    "component_name": "tetris-t",
+    "visual_features": "俄罗斯方块 T 形",
+    "core_semantic": "T形方块",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris T", "T形"]
+  },
+  {
+    "component_name": "tetris-z",
+    "visual_features": "俄罗斯方块 Z 形",
+    "core_semantic": "Z形方块",
+    "use_cases": ["俄罗斯方块游戏", "拼图元素"],
+    "synonyms": ["tetris Z", "Z形"]
+  },
+  {
+    "component_name": "triple",
+    "visual_features": "纯文本「3x」",
+    "core_semantic": "三倍（3倍）",
+    "use_cases": ["三倍经验", "三倍奖励", "加成"],
+    "synonyms": ["3x", "triple", "三倍", "倍数"]
+  },
+  {
+    "component_name": "trophy",
+    "visual_features": "奖杯 🏆",
+    "core_semantic": "奖杯/成就",
+    "use_cases": ["成就系统", "排名第一", "胜利奖励"],
+    "synonyms": ["trophy", "奖杯", "成就", "胜利", "冠军"]
+  },
 
+  // ==================== 10-editing ====================
+  {
+    "component_name": "align-bottom-02",
+    "visual_features": "三个填充矩形（按钮风格）底部对齐",
+    "core_semantic": "底部对齐（填充版）",
+    "use_cases": ["排版工具", "设计编辑器", "布局调整"],
+    "synonyms": ["align bottom", "底部对齐", "对齐", "填充"]
+  },
+  {
+    "component_name": "align-bottom",
+    "visual_features": "三条竖线（线框风格）底部对齐",
+    "core_semantic": "底部对齐（线框版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align bottom", "底部对齐", "线框"]
+  },
+  {
+    "component_name": "align-horizontal-centers-02",
+    "visual_features": "三个填充矩形水平居中对齐",
+    "core_semantic": "水平居中对齐（填充版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align horizontal centers", "水平居中", "填充"]
+  },
+  {
+    "component_name": "align-horizontal-centers",
+    "visual_features": "三条竖线水平居中对齐（线框风格）",
+    "core_semantic": "水平居中对齐（线框版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align horizontal centers", "水平居中", "线框"]
+  },
+  {
+    "component_name": "align-left-02",
+    "visual_features": "三个填充矩形左对齐",
+    "core_semantic": "左对齐（填充版）",
+    "use_cases": ["文本对齐", "布局调整"],
+    "synonyms": ["align left", "左对齐", "填充"]
+  },
+  {
+    "component_name": "align-left",
+    "visual_features": "三条竖线左对齐（线框风格）",
+    "core_semantic": "左对齐（线框版）",
+    "use_cases": ["文本对齐", "布局调整"],
+    "synonyms": ["align left", "左对齐", "线框"]
+  },
+  {
+    "component_name": "align-right-02",
+    "visual_features": "三个填充矩形右对齐",
+    "core_semantic": "右对齐（填充版）",
+    "use_cases": ["文本对齐", "布局调整"],
+    "synonyms": ["align right", "右对齐", "填充"]
+  },
+  {
+    "component_name": "align-right",
+    "visual_features": "三条竖线右对齐（线框风格）",
+    "core_semantic": "右对齐（线框版）",
+    "use_cases": ["文本对齐", "布局调整"],
+    "synonyms": ["align right", "右对齐", "线框"]
+  },
+  {
+    "component_name": "align-top-02",
+    "visual_features": "三个填充矩形顶部对齐",
+    "core_semantic": "顶部对齐（填充版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align top", "顶部对齐", "填充"]
+  },
+  {
+    "component_name": "align-top",
+    "visual_features": "三条竖线顶部对齐（线框风格）",
+    "core_semantic": "顶部对齐（线框版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align top", "顶部对齐", "线框"]
+  },
+  {
+    "component_name": "align-vertical-centers-02",
+    "visual_features": "三个填充矩形垂直居中对齐",
+    "core_semantic": "垂直居中对齐（填充版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align vertical centers", "垂直居中", "填充"]
+  },
+  {
+    "component_name": "align-vertical-centers",
+    "visual_features": "三条横线垂直居中对齐（线框风格）",
+    "core_semantic": "垂直居中对齐（线框版）",
+    "use_cases": ["排版工具", "设计编辑器"],
+    "synonyms": ["align vertical centers", "垂直居中", "线框"]
+  },
+  {
+    "component_name": "bold",
+    "visual_features": "加粗字母「B」",
+    "core_semantic": "字体加粗",
+    "use_cases": ["文本编辑", "格式化工具栏"],
+    "synonyms": ["bold", "加粗", "粗体"]
+  },
+  {
+    "component_name": "brush",
+    "visual_features": "画笔/刷子",
+    "core_semantic": "画笔工具",
+    "use_cases": ["绘图", "涂抹", "编辑"],
+    "synonyms": ["brush", "画笔", "刷子", "绘图"]
+  },
+  {
+    "component_name": "clipboard",
+    "visual_features": "带夹子的写字板",
+    "core_semantic": "剪贴板",
+    "use_cases": ["复制粘贴管理", "暂存内容", "文本操作"],
+    "synonyms": ["clipboard", "剪贴板", "写字板", "粘贴"]
+  },
+  {
+    "component_name": "copy",
+    "visual_features": "两个叠放的文件",
+    "core_semantic": "复制",
+    "use_cases": ["文件/文本复制", "复制按钮"],
+    "synonyms": ["copy", "复制", "双文件"]
+  },
+  {
+    "component_name": "corner-02",
+    "visual_features": "L形拐角带弧线",
+    "core_semantic": "圆角拐角",
+    "use_cases": ["图形角落调整", "设计工具"],
+    "synonyms": ["corner", "拐角", "圆角", "弧线"]
+  },
+  {
+    "component_name": "corner",
+    "visual_features": "直角L形拐角",
+    "core_semantic": "直角拐角",
+    "use_cases": ["图形角落标识", "调整工具"],
+    "synonyms": ["corner", "拐角", "直角", "L形"]
+  },
+  {
+    "component_name": "cursor-alternate-select",
+    "visual_features": "向上箭头",
+    "core_semantic": "选择/切换（上箭头）",
+    "use_cases": ["光标模式切换", "选择工具"],
+    "synonyms": ["cursor", "选择", "向上箭头", "切换"]
+  },
+  {
+    "component_name": "cursor-busy-02",
+    "visual_features": "沙漏，上面很少，底下全空",
+    "core_semantic": "忙碌/等待（沙漏初态）",
+    "use_cases": ["系统繁忙", "加载等待", "处理中"],
+    "synonyms": ["busy", "忙碌", "沙漏", "等待"]
+  },
+  {
+    "component_name": "cursor-busy-03",
+    "visual_features": "沙漏，上面全满",
+    "core_semantic": "忙碌/等待（沙漏满上）",
+    "use_cases": ["系统繁忙", "加载等待"],
+    "synonyms": ["busy", "忙碌", "沙漏", "加载"]
+  },
+  {
+    "component_name": "cursor-busy",
+    "visual_features": "沙漏，下面满的（上面空）",
+    "core_semantic": "忙碌/等待（沙漏下满）",
+    "use_cases": ["系统繁忙", "加载等待"],
+    "synonyms": ["busy", "忙碌", "沙漏", "处理"]
+  },
+  {
+    "component_name": "cursor-default-02",
+    "visual_features": "圆角鼠标指针",
+    "core_semantic": "默认光标（圆角）",
+    "use_cases": ["普通鼠标指针", "默认状态"],
+    "synonyms": ["cursor", "默认", "圆角鼠标", "指针"]
+  },
+  {
+    "component_name": "cursor-default",
+    "visual_features": "尖角箭头鼠标指针",
+    "core_semantic": "默认光标（尖角）",
+    "use_cases": ["普通鼠标指针", "默认状态"],
+    "synonyms": ["cursor", "默认", "尖角箭头", "指针"]
+  },
+  {
+    "component_name": "cursor-diagonal-resize-02",
+    "visual_features": "双向对角尖头（右上↗和左下↙）",
+    "core_semantic": "对角线调整大小（方向1）",
+    "use_cases": ["窗口缩放", "图形缩放", "调整大小"],
+    "synonyms": ["resize", "对角", "缩放", "↗↙"]
+  },
+  {
+    "component_name": "cursor-diagonal-resize",
+    "visual_features": "双向对角尖头（左上↖和右下↘）",
+    "core_semantic": "对角线调整大小（方向2）",
+    "use_cases": ["窗口缩放", "图形缩放"],
+    "synonyms": ["resize", "对角", "缩放", "↖↘"]
+  },
+  {
+    "component_name": "cursor-help-02",
+    "visual_features": "圆角鼠标 + ❓",
+    "core_semantic": "帮助/问号（圆角版）",
+    "use_cases": ["帮助模式", "提示", "疑问"],
+    "synonyms": ["help", "帮助", "问号", "提示"]
+  },
+  {
+    "component_name": "cursor-help",
+    "visual_features": "尖角鼠标 + ❓",
+    "core_semantic": "帮助/问号（尖角版）",
+    "use_cases": ["帮助模式", "提示"],
+    "synonyms": ["help", "帮助", "问号"]
+  },
+  {
+    "component_name": "cursor-horizontal-resize",
+    "visual_features": "水平双向箭头 ↔",
+    "core_semantic": "水平调整大小",
+    "use_cases": ["水平缩放", "拖拽边缘"],
+    "synonyms": ["resize", "水平", "↔", "调整宽度"]
+  },
+  {
+    "component_name": "cursor-link",
+    "visual_features": "手指食指伸出（手型）",
+    "core_semantic": "链接/可点击（手指光标）",
+    "use_cases": ["可点击链接", "交互提示", "超链接"],
+    "synonyms": ["link", "链接", "手型", "点击", "手指"]
+  },
+  {
+    "component_name": "cursor-loading-02",
+    "visual_features": "圆形鼠标切掉一部分，右上角空沙漏",
+    "core_semantic": "加载中（圆形+沙漏）",
+    "use_cases": ["系统加载", "等待响应"],
+    "synonyms": ["loading", "加载", "等待", "沙漏"]
+  },
+  {
+    "component_name": "cursor-loading",
+    "visual_features": "尖角鼠标 + 沙漏",
+    "core_semantic": "加载中（尖角+沙漏）",
+    "use_cases": ["系统加载", "等待响应"],
+    "synonyms": ["loading", "加载", "沙漏"]
+  },
+  {
+    "component_name": "cursor-move",
+    "visual_features": "十字四向箭头",
+    "core_semantic": "移动/拖拽光标",
+    "use_cases": ["拖拽对象", "移动画布", "拖动"],
+    "synonyms": ["move", "移动", "拖拽", "十字箭头"]
+  },
+  {
+    "component_name": "cursor-pen",
+    "visual_features": "仅笔（不带鼠标）",
+    "core_semantic": "绘图笔/手写笔",
+    "use_cases": ["绘图模式", "手写输入"],
+    "synonyms": ["pen", "笔", "绘图", "手写"]
+  },
+  {
+    "component_name": "cursor-precision-select",
+    "visual_features": "十字准星",
+    "core_semantic": "精确选择/瞄准",
+    "use_cases": ["像素级选择", "地图定位", "瞄准"],
+    "synonyms": ["precision", "精确", "十字准星", "瞄准"]
+  },
+  {
+    "component_name": "cursor-text-select",
+    "visual_features": "I型文本光标",
+    "core_semantic": "文本选择/插入",
+    "use_cases": ["文本编辑", "输入框", "文字选择"],
+    "synonyms": ["text", "文本", "I形", "插入", "光标"]
+  },
+  {
+    "component_name": "cursor-unavailable-02",
+    "visual_features": "圆角鼠标 + X",
+    "core_semantic": "不可用/禁用（圆角版）",
+    "use_cases": ["操作禁止", "权限不足", "不可用状态"],
+    "synonyms": ["unavailable", "禁用", "不可用", "X", "禁止"]
+  },
+  {
+    "component_name": "cursor-unavailable",
+    "visual_features": "尖角鼠标 + X",
+    "core_semantic": "不可用/禁用（尖角版）",
+    "use_cases": ["操作禁止", "不可用状态"],
+    "synonyms": ["unavailable", "禁用", "X", "禁止"]
+  },
+  {
+    "component_name": "cursor-vertical-resize",
+    "visual_features": "上下双向箭头 ↕",
+    "core_semantic": "垂直调整大小",
+    "use_cases": ["垂直缩放", "拖拽上下边缘"],
+    "synonyms": ["resize", "垂直", "↕", "调整高度"]
+  },
+  {
+    "component_name": "eraser",
+    "visual_features": "橡皮擦",
+    "core_semantic": "橡皮擦工具",
+    "use_cases": ["擦除内容", "绘图修正"],
+    "synonyms": ["eraser", "橡皮擦", "擦除", "修正"]
+  },
+  {
+    "component_name": "eyedropper",
+    "visual_features": "滴管",
+    "core_semantic": "取色/吸管工具",
+    "use_cases": ["吸取颜色", "调色", "设计工具"],
+    "synonyms": ["eyedropper", "吸管", "取色", "滴管"]
+  },
+  {
+    "component_name": "fill",
+    "visual_features": "油漆桶",
+    "core_semantic": "填充工具（油漆桶）",
+    "use_cases": ["颜色填充", "区域填充", "绘图"],
+    "synonyms": ["fill", "填充", "油漆桶", "着色"]
+  },
+  {
+    "component_name": "font-02",
+    "visual_features": "纯文本「Aa」",
+    "core_semantic": "字体/文本样式（双字母）",
+    "use_cases": ["字体设置", "文本编辑", "样式选择"],
+    "synonyms": ["font", "字体", "Aa", "文本"]
+  },
+  {
+    "component_name": "font",
+    "visual_features": "纯文本「A」",
+    "core_semantic": "字体/文本样式（单字母）",
+    "use_cases": ["字体设置", "文本工具"],
+    "synonyms": ["font", "字体", "A", "文本"]
+  },
+  {
+    "component_name": "frame",
+    "visual_features": "形状像 #（井号）",
+    "core_semantic": "框架/边框（井号形）",
+    "use_cases": ["边框工具", "布局框架", "占位"],
+    "synonyms": ["frame", "框架", "边框", "井号"]
+  },
+  {
+    "component_name": "italic",
+    "visual_features": "斜体「I」",
+    "core_semantic": "字体倾斜",
+    "use_cases": ["文本编辑", "斜体样式"],
+    "synonyms": ["italic", "斜体", "倾斜"]
+  },
+  {
+    "component_name": "outline",
+    "visual_features": "有边框，内部有色，但边框和填充之间有空隙",
+    "core_semantic": "轮廓/描边（双层效果）",
+    "use_cases": ["描边设置", "轮廓显示", "图形样式"],
+    "synonyms": ["outline", "轮廓", "描边", "双层"]
+  },
+  {
+    "component_name": "paintbrush",
+    "visual_features": "刷子（与brush类似）",
+    "core_semantic": "刷子/画笔（绘图）",
+    "use_cases": ["绘画", "涂抹", "装饰"],
+    "synonyms": ["paintbrush", "刷子", "画笔", "绘图"]
+  },
+  {
+    "component_name": "palette",
+    "visual_features": "调色板 🎨",
+    "core_semantic": "调色板/颜色选择",
+    "use_cases": ["颜色选取", "主题配色", "设计工具"],
+    "synonyms": ["palette", "调色板", "颜色", "色盘"]
+  },
+  {
+    "component_name": "paste",
+    "visual_features": "剪贴板 + 纸张",
+    "core_semantic": "粘贴",
+    "use_cases": ["粘贴内容", "文本操作"],
+    "synonyms": ["paste", "粘贴", "贴入"]
+  },
+  {
+    "component_name": "pen",
+    "visual_features": "钢笔 🖊️",
+    "core_semantic": "钢笔/绘图笔",
+    "use_cases": ["手绘", "签名", "精细描边"],
+    "synonyms": ["pen", "钢笔", "笔", "绘图"]
+  },
+  {
+    "component_name": "pencil",
+    "visual_features": "铅笔 ✏️",
+    "core_semantic": "铅笔/草图",
+    "use_cases": ["草图", "书写", "绘画"],
+    "synonyms": ["pencil", "铅笔", "绘图", "草稿"]
+  },
+  {
+    "component_name": "redo",
+    "visual_features": "右向弯曲箭头 ↷",
+    "core_semantic": "重做（前进）",
+    "use_cases": ["编辑操作重做", "撤销恢复"],
+    "synonyms": ["redo", "重做", "前进", "↷"]
+  },
+  {
+    "component_name": "select",
+    "visual_features": "虚线框",
+    "core_semantic": "选择/框选工具",
+    "use_cases": ["区域选择", "对象框选", "选取"],
+    "synonyms": ["select", "选择", "框选", "虚线框"]
+  },
+  {
+    "component_name": "split",
+    "visual_features": "一条线从中间断开成两截",
+    "core_semantic": "分割/拆分",
+    "use_cases": ["分割路径", "拆分元素", "断点"],
+    "synonyms": ["split", "分割", "拆分", "断开"]
+  },
+  {
+    "component_name": "strikethrough",
+    "visual_features": "带横线穿过的「S」",
+    "core_semantic": "删除线",
+    "use_cases": ["文本标记删除", "中划线", "样式"],
+    "synonyms": ["strikethrough", "删除线", "中划线", "S"]
+  },
+  {
+    "component_name": "text",
+    "visual_features": "大写字母「T」",
+    "core_semantic": "文本工具/文字",
+    "use_cases": ["添加文字", "文本框", "编辑"],
+    "synonyms": ["text", "文本", "T", "文字"]
+  },
+  {
+    "component_name": "underline",
+    "visual_features": "带下划线的「U」",
+    "core_semantic": "下划线",
+    "use_cases": ["文本下划线", "强调", "样式"],
+    "synonyms": ["underline", "下划线", "U"]
+  },
+  {
+    "component_name": "undo",
+    "visual_features": "左向弯曲箭头 ↶",
+    "core_semantic": "撤销（后退）",
+    "use_cases": ["撤销上一步操作", "回退"],
+    "synonyms": ["undo", "撤销", "后退", "↶"]
+  },
+
+  // ==================== 11-symbols ====================
+  {
+    "component_name": "A-to-Z",
+    "visual_features": "纯文本「A-Z」",
+    "core_semantic": "字母顺序排序",
+    "use_cases": ["列表排序", "联系人排序", "筛选"],
+    "synonyms": ["A-Z", "字母排序", "升序"]
+  },
+  {
+    "component_name": "approximately-equal-to",
+    "visual_features": "波浪双线 ≈",
+    "core_semantic": "约等于",
+    "use_cases": ["数学公式", "估算", "近似值"],
+    "synonyms": ["≈", "约等于", "近似"]
+  },
+  {
+    "component_name": "bitcoin",
+    "visual_features": "比特币符号 ₿",
+    "core_semantic": "比特币",
+    "use_cases": ["加密货币", "支付", "金融"],
+    "synonyms": ["bitcoin", "BTC", "₿", "比特币"]
+  },
+  {
+    "component_name": "cny-jpy",
+    "visual_features": "人民币/日元符号 ¥",
+    "core_semantic": "人民币/日元货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["CNY", "JPY", "¥", "人民币", "日元"]
+  },
+  {
+    "component_name": "digit-0-slashed",
+    "visual_features": "带斜杠的零（Ø）",
+    "core_semantic": "区分零和O",
+    "use_cases": ["编码", "序列号", "密码输入"],
+    "synonyms": ["0 slash", "零斜杠", "Ø", "区分"]
+  },
+  {
+    "component_name": "digit-0",
+    "visual_features": "普通数字 0",
+    "core_semantic": "数字0",
+    "use_cases": ["数字显示", "计数", "输入"],
+    "synonyms": ["0", "零", "数字0"]
+  },
+  {
+    "component_name": "digit-1",
+    "visual_features": "普通数字 1",
+    "core_semantic": "数字1",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["1", "一", "数字1"]
+  },
+  {
+    "component_name": "digit-2",
+    "visual_features": "普通数字 2",
+    "core_semantic": "数字2",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["2", "二", "数字2"]
+  },
+  {
+    "component_name": "digit-3",
+    "visual_features": "普通数字 3",
+    "core_semantic": "数字3",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["3", "三", "数字3"]
+  },
+  {
+    "component_name": "digit-4",
+    "visual_features": "普通数字 4",
+    "core_semantic": "数字4",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["4", "四", "数字4"]
+  },
+  {
+    "component_name": "digit-5",
+    "visual_features": "普通数字 5",
+    "core_semantic": "数字5",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["5", "五", "数字5"]
+  },
+  {
+    "component_name": "digit-6",
+    "visual_features": "普通数字 6",
+    "core_semantic": "数字6",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["6", "六", "数字6"]
+  },
+  {
+    "component_name": "digit-7",
+    "visual_features": "普通数字 7",
+    "core_semantic": "数字7",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["7", "七", "数字7"]
+  },
+  {
+    "component_name": "digit-8",
+    "visual_features": "普通数字 8",
+    "core_semantic": "数字8",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["8", "八", "数字8"]
+  },
+  {
+    "component_name": "digit-9",
+    "visual_features": "普通数字 9",
+    "core_semantic": "数字9",
+    "use_cases": ["数字显示", "计数"],
+    "synonyms": ["9", "九", "数字9"]
+  },
+  {
+    "component_name": "digits-123",
+    "visual_features": "纯文本「123」",
+    "core_semantic": "数字序列/输入",
+    "use_cases": ["数字键盘", "数字输入模式", "排序"],
+    "synonyms": ["123", "数字", "数字序列", "输入"]
+  },
+  {
+    "component_name": "division-02",
+    "visual_features": "斜线「/」",
+    "core_semantic": "除法（斜线形式）",
+    "use_cases": ["数学运算", "公式", "分数"],
+    "synonyms": ["/", "除以", "斜线除法"]
+  },
+  {
+    "component_name": "division",
+    "visual_features": "除号「÷」",
+    "core_semantic": "除法（标准符号）",
+    "use_cases": ["数学运算", "公式"],
+    "synonyms": ["÷", "除以", "除号"]
+  },
+  {
+    "component_name": "emoji",
+    "visual_features": "中性脸 😐",
+    "core_semantic": "表情符号（通用）",
+    "use_cases": ["插入表情", "情绪选择"],
+    "synonyms": ["emoji", "表情", "中性"]
+  },
+  {
+    "component_name": "emoji-02",
+    "visual_features": "微笑 😊",
+    "core_semantic": "微笑表情",
+    "use_cases": ["积极情绪", "愉快"],
+    "synonyms": ["smile", "微笑", "😊"]
+  },
+  {
+    "component_name": "emoji-03",
+    "visual_features": "难过表情",
+    "core_semantic": "难过/悲伤",
+    "use_cases": ["负面情绪", "伤心"],
+    "synonyms": ["sad", "难过", "悲伤"]
+  },
+  {
+    "component_name": "emoji-04",
+    "visual_features": "难过 + 嘴边有一滴水滴",
+    "core_semantic": "难过到流泪（但未大哭）",
+    "use_cases": ["委屈", "伤心"],
+    "synonyms": ["sad", "难过", "流泪"]
+  },
+  {
+    "component_name": "emoji-05",
+    "visual_features": "大笑 😄",
+    "core_semantic": "开心大笑",
+    "use_cases": ["欢乐", "有趣"],
+    "synonyms": ["laugh", "大笑", "😄"]
+  },
+  {
+    "component_name": "emoji-06",
+    "visual_features": "惊讶 😮",
+    "core_semantic": "惊讶/震惊",
+    "use_cases": ["意外", "吃惊"],
+    "synonyms": ["surprised", "惊讶", "😮"]
+  },
+  {
+    "component_name": "emoji-07",
+    "visual_features": "极度震惊（比06更夸张）",
+    "core_semantic": "极度震惊/吓呆",
+    "use_cases": ["恐惧", "震撼"],
+    "synonyms": ["shocked", "震惊", "极度"]
+  },
+  {
+    "component_name": "emoji-08",
+    "visual_features": "更开心（比大笑更甚）",
+    "core_semantic": "非常开心/兴高采烈",
+    "use_cases": ["狂喜", "兴奋"],
+    "synonyms": ["happy", "开心", "兴奋"]
+  },
+  {
+    "component_name": "emoji-09",
+    "visual_features": "开心到张大嘴巴",
+    "core_semantic": "开心得张嘴大笑",
+    "use_cases": ["极高兴", "惊讶的开心"],
+    "synonyms": ["joy", "开心", "张嘴笑"]
+  },
+  {
+    "component_name": "emoji-10",
+    "visual_features": "笑哭 😂",
+    "core_semantic": "笑到流泪",
+    "use_cases": ["非常有趣", "笑点低"],
+    "synonyms": ["😂", "笑哭", "笑泪"]
+  },
+  {
+    "component_name": "emoji-11",
+    "visual_features": ">_< 眯眼翘嘴",
+    "core_semantic": "眯眼翘嘴（调皮或委屈）",
+    "use_cases": ["调皮", "无奈", "卖萌"],
+    "synonyms": [">_<", "眯眼", "翘嘴"]
+  },
+  {
+    "component_name": "emoji-12",
+    "visual_features": "难受（未详细描述）",
+    "core_semantic": "难受/不适",
+    "use_cases": ["身体不适", "郁闷"],
+    "synonyms": ["uncomfortable", "难受", "不舒服"]
+  },
+  {
+    "component_name": "emoji-13",
+    "visual_features": "嘴巴张大 + 眼睛 > <（类似震惊）",
+    "core_semantic": "震惊/夸张（与06不同）",
+    "use_cases": ["极度震惊", "惊吓"],
+    "synonyms": ["shocked", "震惊", "> <"]
+  },
+  {
+    "component_name": "emoji-14",
+    "visual_features": "难受到张嘴巴",
+    "core_semantic": "痛苦/难受得张嘴",
+    "use_cases": ["疼痛", "极度难过"],
+    "synonyms": ["pain", "痛苦", "张嘴"]
+  },
+  {
+    "component_name": "emoji-15",
+    "visual_features": "生气 😠",
+    "core_semantic": "愤怒/生气",
+    "use_cases": ["愤怒", "不满"],
+    "synonyms": ["angry", "生气", "😠"]
+  },
+  {
+    "component_name": "emoji-16",
+    "visual_features": "T.T 哭",
+    "core_semantic": "哭泣（文字眼）",
+    "use_cases": ["大哭", "伤心"],
+    "synonyms": ["cry", "哭", "T.T"]
+  },
+  {
+    "component_name": "emoji-17",
+    "visual_features": "双眼XX，嘴巴上翘（死亡）",
+    "core_semantic": "死亡/挂了（表情）",
+    "use_cases": ["游戏死亡", "搞笑死亡"],
+    "synonyms": ["dead", "死亡", "XX眼"]
+  },
+  {
+    "component_name": "emoji-18",
+    "visual_features": "四角星眼 + 张嘴",
+    "core_semantic": "星星眼（四角）",
+    "use_cases": ["崇拜", "兴奋", "眼前一亮"],
+    "synonyms": ["star eyes", "星星眼", "四角星"]
+  },
+  {
+    "component_name": "emoji-19",
+    "visual_features": "五角星眼 + 张嘴",
+    "core_semantic": "星星眼（五角）",
+    "use_cases": ["崇拜", "兴奋", "眼前一亮"],
+    "synonyms": ["star eyes", "星星眼", "五角星"]
+  },
+  {
+    "component_name": "emoji-20",
+    "visual_features": "爱心眼 😍",
+    "core_semantic": "喜爱/痴迷",
+    "use_cases": ["喜欢", "迷恋", "心形眼"],
+    "synonyms": ["love", "爱心眼", "😍", "着迷"]
+  },
+  {
+    "component_name": "equals",
+    "visual_features": "等号 =",
+    "core_semantic": "等号",
+    "use_cases": ["数学公式", "比较", "赋值"],
+    "synonyms": ["=", "等于", "等号"]
+  },
+  {
+    "component_name": "eur",
+    "visual_features": "欧元符号 €",
+    "core_semantic": "欧元货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["EUR", "€", "欧元"]
+  },
+  {
+    "component_name": "function",
+    "visual_features": "数学函数符号 ƒ（形态特殊的f）",
+    "core_semantic": "函数/数学函数",
+    "use_cases": ["数学工具", "公式编辑器", "编程"],
+    "synonyms": ["function", "函数", "ƒ", "f(x)"]
+  },
+  {
+    "component_name": "gbp",
+    "visual_features": "英镑符号 £",
+    "core_semantic": "英镑货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["GBP", "£", "英镑"]
+  },
+  {
+    "component_name": "greater-than-or-equal-to",
+    "visual_features": "大于等于符号 ≥",
+    "core_semantic": "大于等于",
+    "use_cases": ["数学公式", "比较", "筛选条件"],
+    "synonyms": ["≥", "大于等于", "不小于"]
+  },
+  {
+    "component_name": "greater-than",
+    "visual_features": "大于符号 >",
+    "core_semantic": "大于",
+    "use_cases": ["数学比较", "排序", "筛选"],
+    "synonyms": [">", "大于"]
+  },
+  {
+    "component_name": "infinity",
+    "visual_features": "无穷大符号 ∞",
+    "core_semantic": "无穷大/无限",
+    "use_cases": ["数学", "无限加载", "循环", "永久有效"],
+    "synonyms": ["∞", "infinity", "无限", "无穷"]
+  },
+  {
+    "component_name": "inr",
+    "visual_features": "印度卢比符号 ₹",
+    "core_semantic": "印度卢比货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["INR", "₹", "印度卢比"]
+  },
+  {
+    "component_name": "krw",
+    "visual_features": "韩元符号 ₩",
+    "core_semantic": "韩元货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["KRW", "₩", "韩元"]
+  },
+  {
+    "component_name": "less-than-or-equal-to",
+    "visual_features": "小于等于符号 ≤",
+    "core_semantic": "小于等于",
+    "use_cases": ["数学公式", "比较", "筛选条件"],
+    "synonyms": ["≤", "小于等于", "不大于"]
+  },
+  {
+    "component_name": "less-than",
+    "visual_features": "小于符号 <",
+    "core_semantic": "小于",
+    "use_cases": ["数学比较", "排序", "筛选"],
+    "synonyms": ["<", "小于"]
+  },
+  {
+    "component_name": "letter-a-upper",
+    "visual_features": "大写字母 A",
+    "core_semantic": "大写字母 A",
+    "use_cases": ["排序标识", "选项标记", "字母分类"],
+    "synonyms": ["A", "大写A", "字母A"]
+  },
+  {
+    "component_name": "letter-abc-upper",
+    "visual_features": "纯文本「ABC」",
+    "core_semantic": "字母排序/输入",
+    "use_cases": ["字母键盘", "文本输入", "排序"],
+    "synonyms": ["ABC", "字母", "大写"]
+  },
+  {
+    "component_name": "letter-b-upper",
+    "visual_features": "大写字母 B",
+    "core_semantic": "字母B",
+    "use_cases": ["选项B", "排序"],
+    "synonyms": ["B", "字母B"]
+  },
+  {
+    "component_name": "letter-c-upper",
+    "visual_features": "大写字母 C",
+    "core_semantic": "字母C",
+    "use_cases": ["选项C"],
+    "synonyms": ["C", "字母C"]
+  },
+  {
+    "component_name": "letter-d-upper",
+    "visual_features": "大写字母 D",
+    "core_semantic": "字母D",
+    "use_cases": ["选项D"],
+    "synonyms": ["D", "字母D"]
+  },
+  {
+    "component_name": "letter-e-upper",
+    "visual_features": "大写字母 E",
+    "core_semantic": "字母E",
+    "use_cases": ["选项E"],
+    "synonyms": ["E", "字母E"]
+  },
+  {
+    "component_name": "letter-f-upper",
+    "visual_features": "大写字母 F",
+    "core_semantic": "字母F",
+    "use_cases": ["选项F"],
+    "synonyms": ["F", "字母F"]
+  },
+  {
+    "component_name": "letter-g-upper",
+    "visual_features": "大写字母 G",
+    "core_semantic": "字母G",
+    "use_cases": ["选项G"],
+    "synonyms": ["G", "字母G"]
+  },
+  {
+    "component_name": "letter-h-upper",
+    "visual_features": "大写字母 H",
+    "core_semantic": "字母H",
+    "use_cases": ["选项H"],
+    "synonyms": ["H", "字母H"]
+  },
+  {
+    "component_name": "letter-i-upper",
+    "visual_features": "大写字母 I",
+    "core_semantic": "字母I",
+    "use_cases": ["选项I"],
+    "synonyms": ["I", "字母I"]
+  },
+  {
+    "component_name": "letter-j-upper",
+    "visual_features": "大写字母 J",
+    "core_semantic": "字母J",
+    "use_cases": ["选项J"],
+    "synonyms": ["J", "字母J"]
+  },
+  {
+    "component_name": "letter-k-upper",
+    "visual_features": "大写字母 K",
+    "core_semantic": "字母K",
+    "use_cases": ["选项K"],
+    "synonyms": ["K", "字母K"]
+  },
+  {
+    "component_name": "letter-l-upper",
+    "visual_features": "大写字母 L",
+    "core_semantic": "字母L",
+    "use_cases": ["选项L"],
+    "synonyms": ["L", "字母L"]
+  },
+  {
+    "component_name": "letter-m-upper",
+    "visual_features": "大写字母 M",
+    "core_semantic": "字母M",
+    "use_cases": ["选项M"],
+    "synonyms": ["M", "字母M"]
+  },
+  {
+    "component_name": "letter-n-upper",
+    "visual_features": "大写字母 N",
+    "core_semantic": "字母N",
+    "use_cases": ["选项N"],
+    "synonyms": ["N", "字母N"]
+  },
+  {
+    "component_name": "letter-o-upper",
+    "visual_features": "大写字母 O",
+    "core_semantic": "字母O",
+    "use_cases": ["选项O"],
+    "synonyms": ["O", "字母O"]
+  },
+  {
+    "component_name": "letter-p-upper",
+    "visual_features": "大写字母 P",
+    "core_semantic": "字母P",
+    "use_cases": ["选项P"],
+    "synonyms": ["P", "字母P"]
+  },
+  {
+    "component_name": "letter-q-upper",
+    "visual_features": "大写字母 Q",
+    "core_semantic": "字母Q",
+    "use_cases": ["选项Q"],
+    "synonyms": ["Q", "字母Q"]
+  },
+  {
+    "component_name": "letter-r-upper",
+    "visual_features": "大写字母 R",
+    "core_semantic": "字母R",
+    "use_cases": ["选项R"],
+    "synonyms": ["R", "字母R"]
+  },
+  {
+    "component_name": "letter-s-upper",
+    "visual_features": "大写字母 S",
+    "core_semantic": "字母S",
+    "use_cases": ["选项S"],
+    "synonyms": ["S", "字母S"]
+  },
+  {
+    "component_name": "letter-t-upper",
+    "visual_features": "大写字母 T",
+    "core_semantic": "字母T",
+    "use_cases": ["选项T"],
+    "synonyms": ["T", "字母T"]
+  },
+  {
+    "component_name": "letter-u-upper",
+    "visual_features": "大写字母 U",
+    "core_semantic": "字母U",
+    "use_cases": ["选项U"],
+    "synonyms": ["U", "字母U"]
+  },
+  {
+    "component_name": "letter-v-upper",
+    "visual_features": "大写字母 V",
+    "core_semantic": "字母V",
+    "use_cases": ["选项V"],
+    "synonyms": ["V", "字母V"]
+  },
+  {
+    "component_name": "letter-w-upper",
+    "visual_features": "大写字母 W",
+    "core_semantic": "字母W",
+    "use_cases": ["选项W"],
+    "synonyms": ["W", "字母W"]
+  },
+  {
+    "component_name": "letter-x-upper",
+    "visual_features": "大写字母 X",
+    "core_semantic": "字母X",
+    "use_cases": ["选项X"],
+    "synonyms": ["X", "字母X"]
+  },
+  {
+    "component_name": "letter-y-upper",
+    "visual_features": "大写字母 Y",
+    "core_semantic": "字母Y",
+    "use_cases": ["选项Y"],
+    "synonyms": ["Y", "字母Y"]
+  },
+  {
+    "component_name": "letter-z-upper",
+    "visual_features": "大写字母 Z",
+    "core_semantic": "字母Z",
+    "use_cases": ["选项Z"],
+    "synonyms": ["Z", "字母Z"]
+  },
+  {
+    "component_name": "minus",
+    "visual_features": "减号 −",
+    "core_semantic": "减法/减号",
+    "use_cases": ["数学运算", "删除/移除", "减少数量"],
+    "synonyms": ["−", "minus", "减号", "减去"]
+  },
+  {
+    "component_name": "multiplication-02",
+    "visual_features": "星号 *",
+    "core_semantic": "乘法（星号形式）",
+    "use_cases": ["数学运算", "公式", "编程"],
+    "synonyms": ["*", "乘号", "星号乘"]
+  },
+  {
+    "component_name": "multiplication-03",
+    "visual_features": "点乘符号 ·",
+    "core_semantic": "乘法（点乘形式）",
+    "use_cases": ["数学运算", "公式"],
+    "synonyms": ["·", "点乘", "乘号"]
+  },
+  {
+    "component_name": "multiplication",
+    "visual_features": "乘号 ×",
+    "core_semantic": "乘法（标准符号）",
+    "use_cases": ["数学运算", "公式"],
+    "synonyms": ["×", "乘号", "乘以"]
+  },
+  {
+    "component_name": "ngn",
+    "visual_features": "尼日利亚奈拉符号 ₦",
+    "core_semantic": "尼日利亚奈拉货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["NGN", "₦", "奈拉"]
+  },
+  {
+    "component_name": "not-equal-to",
+    "visual_features": "不等于符号 ≠",
+    "core_semantic": "不等于",
+    "use_cases": ["数学比较", "逻辑判断", "筛选"],
+    "synonyms": ["≠", "不等于"]
+  },
+  {
+    "component_name": "percent",
+    "visual_features": "百分号 %",
+    "core_semantic": "百分比",
+    "use_cases": ["折扣", "比例", "数据统计"],
+    "synonyms": ["%", "percent", "百分比"]
+  },
+  {
+    "component_name": "pi",
+    "visual_features": "圆周率 π",
+    "core_semantic": "圆周率",
+    "use_cases": ["数学公式", "科学计算", "工程"],
+    "synonyms": ["π", "pi", "圆周率"]
+  },
+  {
+    "component_name": "plus",
+    "visual_features": "加号 +",
+    "core_semantic": "加法/新增",
+    "use_cases": ["数学运算", "添加/新增", "展开"],
+    "synonyms": ["+", "plus", "加号", "添加"]
+  },
+  {
+    "component_name": "rub",
+    "visual_features": "俄罗斯卢布符号 ₽",
+    "core_semantic": "俄罗斯卢布货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["RUB", "₽", "卢布"]
+  },
+  {
+    "component_name": "square-root",
+    "visual_features": "平方根符号 √",
+    "core_semantic": "平方根",
+    "use_cases": ["数学公式", "科学计算", "工程"],
+    "synonyms": ["√", "平方根", "开根号"]
+  },
+  {
+    "component_name": "thb",
+    "visual_features": "泰铢符号 ฿",
+    "core_semantic": "泰铢货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["THB", "฿", "泰铢"]
+  },
+  {
+    "component_name": "try",
+    "visual_features": "土耳其里拉符号 ₺",
+    "core_semantic": "土耳其里拉货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["TRY", "₺", "里拉"]
+  },
+  {
+    "component_name": "usd-02",
+    "visual_features": "S 上下各有一条短横线",
+    "core_semantic": "美元符号（双横线版）",
+    "use_cases": ["货币显示", "金融", "特殊标识"],
+    "synonyms": ["USD", "美元", "双横线"]
+  },
+  {
+    "component_name": "usd",
+    "visual_features": "标准美元符号 $",
+    "core_semantic": "美元货币",
+    "use_cases": ["货币显示", "价格", "金融"],
+    "synonyms": ["$", "USD", "美元"]
+  },
+  {
+    "component_name": "yen",
+    "visual_features": "汉字「円」",
+    "core_semantic": "日元（汉字写法）",
+    "use_cases": ["日元货币", "日本相关"],
+    "synonyms": ["円", "yen", "日元"]
+  },
+  {
+    "component_name": "yuan",
+    "visual_features": "汉字「元」",
+    "core_semantic": "人民币（汉字写法）",
+    "use_cases": ["人民币货币", "中国相关"],
+    "synonyms": ["元", "yuan", "人民币"]
+  },
+
+  // ==================== 12-misc ====================
+  {
+    "component_name": "acute-triangle",
+    "visual_features": "填充的等腰锐角三角形",
+    "core_semantic": "锐角三角形",
+    "use_cases": ["几何图形", "数学教学", "形状工具"],
+    "synonyms": ["acute triangle", "锐角三角形", "三角形"]
+  },
+  {
+    "component_name": "capsule",
+    "visual_features": "胶囊形/药丸形状",
+    "core_semantic": "胶囊/药丸",
+    "use_cases": ["按钮样式", "标签", "UI组件", "医疗"],
+    "synonyms": ["capsule", "胶囊", "药丸", "圆角条"]
+  },
+  {
+    "component_name": "circle",
+    "visual_features": "圆形",
+    "core_semantic": "圆形",
+    "use_cases": ["几何形状", "UI元素", "状态指示器"],
+    "synonyms": ["circle", "圆形", "圆"]
+  },
+  {
+    "component_name": "ease-in-out",
+    "visual_features": "平滑的S形曲线",
+    "core_semantic": "缓入缓出/动画缓动",
+    "use_cases": ["动画编辑器", "UI动效", "设计工具"],
+    "synonyms": ["ease-in-out", "缓入缓出", "缓动", "S曲线"]
+  },
+  {
+    "component_name": "ease-in",
+    "visual_features": "缓入曲线（开始时缓慢加速）",
+    "core_semantic": "缓入/动画缓入",
+    "use_cases": ["动画编辑器", "UI动效"],
+    "synonyms": ["ease-in", "缓入", "缓动"]
+  },
+  {
+    "component_name": "ease-out",
+    "visual_features": "缓出曲线（结束时缓慢减速）",
+    "core_semantic": "缓出/动画缓出",
+    "use_cases": ["动画编辑器", "UI动效"],
+    "synonyms": ["ease-out", "缓出", "缓动"]
+  },
+  {
+    "component_name": "ellipse",
+    "visual_features": "椭圆",
+    "core_semantic": "椭圆",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["ellipse", "椭圆"]
+  },
+  {
+    "component_name": "equilateral-triangle",
+    "visual_features": "等边三角形",
+    "core_semantic": "等边三角形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["equilateral triangle", "等边三角形", "正三角形"]
+  },
+  {
+    "component_name": "five-pointed-star",
+    "visual_features": "五角星",
+    "core_semantic": "五角星",
+    "use_cases": ["评分", "收藏", "成就", "装饰"],
+    "synonyms": ["five-pointed star", "五角星", "星形"]
+  },
+  {
+    "component_name": "four-pointed-star",
+    "visual_features": "四角星",
+    "core_semantic": "四角星",
+    "use_cases": ["装饰", "评级", "特殊标记"],
+    "synonyms": ["four-pointed star", "四角星", "星形"]
+  },
+  {
+    "component_name": "heptagon",
+    "visual_features": "七边形",
+    "core_semantic": "七边形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["heptagon", "七边形"]
+  },
+  {
+    "component_name": "hexagon",
+    "visual_features": "六边形",
+    "core_semantic": "六边形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["hexagon", "六边形"]
+  },
+  {
+    "component_name": "linear",
+    "visual_features": "一条斜着的直线",
+    "core_semantic": "线性/直线",
+    "use_cases": ["线性变化", "恒定速度动画", "图表"],
+    "synonyms": ["linear", "线性", "直线"]
+  },
+  {
+    "component_name": "loading-bars-02",
+    "visual_features": "加载条变体（如2条波动的竖条）",
+    "core_semantic": "加载中动画条",
+    "use_cases": ["数据加载", "等待状态"],
+    "synonyms": ["loading", "进度条", "加载"]
+  },
+  {
+    "component_name": "loading-bars-03",
+    "visual_features": "加载条变体3",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars-04",
+    "visual_features": "加载条变体4",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars-05",
+    "visual_features": "加载条变体5",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars-06",
+    "visual_features": "加载条变体6",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars-07",
+    "visual_features": "加载条变体7",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars-08",
+    "visual_features": "加载条变体8",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars-09",
+    "visual_features": "加载条变体9",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-bars",
+    "visual_features": "标准加载条（如3条竖线波动）",
+    "core_semantic": "加载中进度条",
+    "use_cases": ["加载动画", "数据读取"],
+    "synonyms": ["loading", "进度", "缓冲"]
+  },
+  {
+    "component_name": "loading-dots-02",
+    "visual_features": "加载点变体2",
+    "core_semantic": "加载中圆点动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading dots"]
+  },
+  {
+    "component_name": "loading-dots-03",
+    "visual_features": "加载点变体3",
+    "core_semantic": "加载圆点动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading dots"]
+  },
+  {
+    "component_name": "loading-dots-04",
+    "visual_features": "加载点变体4",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-dots-05",
+    "visual_features": "加载点变体5",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-dots-06",
+    "visual_features": "加载点变体6",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-dots-07",
+    "visual_features": "加载点变体7",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-dots-08",
+    "visual_features": "加载点变体8",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-dots-09",
+    "visual_features": "加载点变体9",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-dots",
+    "visual_features": "标准加载点（如三个点水平排列）",
+    "core_semantic": "加载中/等待",
+    "use_cases": ["正在加载", "等待响应"],
+    "synonyms": ["loading", "dots", "等待"]
+  },
+  {
+    "component_name": "loading-ring-02",
+    "visual_features": "旋转圆环变体2",
+    "core_semantic": "加载环动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading ring"]
+  },
+  {
+    "component_name": "loading-ring-03",
+    "visual_features": "加载环变体3",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring-04",
+    "visual_features": "加载环变体4",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring-05",
+    "visual_features": "加载环变体5",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring-06",
+    "visual_features": "加载环变体6",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring-07",
+    "visual_features": "加载环变体7",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring-08",
+    "visual_features": "加载环变体8",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring-09",
+    "visual_features": "加载环变体9",
+    "core_semantic": "加载动画",
+    "use_cases": ["加载指示器"],
+    "synonyms": ["loading"]
+  },
+  {
+    "component_name": "loading-ring",
+    "visual_features": "标准旋转圆环（如一个弧形的环）",
+    "core_semantic": "加载中/进度环",
+    "use_cases": ["数据加载", "旋转等待"],
+    "synonyms": ["loading", "ring", "进度环"]
+  },
+  {
+    "component_name": "obtuse-triangle",
+    "visual_features": "等腰钝角三角形",
+    "core_semantic": "钝角三角形",
+    "use_cases": ["几何图形", "形状工具", "数学教学"],
+    "synonyms": ["obtuse triangle", "钝角三角形"]
+  },
+  {
+    "component_name": "parallelogram",
+    "visual_features": "平行四边形",
+    "core_semantic": "平行四边形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["parallelogram", "平行四边形"]
+  },
+  {
+    "component_name": "pentagon",
+    "visual_features": "五边形",
+    "core_semantic": "五边形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["pentagon", "五边形"]
+  },
+  {
+    "component_name": "progress-02",
+    "visual_features": "进度条变体（如分段进度）",
+    "core_semantic": "进度指示",
+    "use_cases": ["任务进度", "下载进度"],
+    "synonyms": ["progress", "进度"]
+  },
+  {
+    "component_name": "progress-03",
+    "visual_features": "进度条变体3",
+    "core_semantic": "进度指示",
+    "use_cases": ["进度条"],
+    "synonyms": ["progress"]
+  },
+  {
+    "component_name": "progress-04",
+    "visual_features": "进度条变体4",
+    "core_semantic": "进度指示",
+    "use_cases": ["进度条"],
+    "synonyms": ["progress"]
+  },
+  {
+    "component_name": "progress-05",
+    "visual_features": "进度条变体5",
+    "core_semantic": "进度指示",
+    "use_cases": ["进度条"],
+    "synonyms": ["progress"]
+  },
+  {
+    "component_name": "progress",
+    "visual_features": "标准进度条（水平条加填充）",
+    "core_semantic": "进度/完成度",
+    "use_cases": ["下载进度", "任务完成度"],
+    "synonyms": ["progress", "进度条"]
+  },
+  {
+    "component_name": "quadrilateral",
+    "visual_features": "倾斜45度的正方形",
+    "core_semantic": "四边形/菱形",
+    "use_cases": ["几何图形", "形状工具"],
+    "synonyms": ["quadrilateral", "四边形", "倾斜正方形"]
+  },
+  {
+    "component_name": "quarter-circle",
+    "visual_features": "四分之一圆/扇形",
+    "core_semantic": "四分之一圆",
+    "use_cases": ["几何图形", "图表", "进度指示"],
+    "synonyms": ["quarter circle", "四分之一圆", "扇形"]
+  },
+  {
+    "component_name": "radiation",
+    "visual_features": "辐射警告标志 ☢",
+    "core_semantic": "辐射/危险警告",
+    "use_cases": ["危险品", "核辐射", "安全警示"],
+    "synonyms": ["radiation", "辐射", "☢", "警告"]
+  },
+  {
+    "component_name": "rectangle",
+    "visual_features": "竖着的圆角长方形",
+    "core_semantic": "矩形/圆角矩形",
+    "use_cases": ["按钮", "卡片", "UI容器"],
+    "synonyms": ["rectangle", "矩形", "圆角矩形"]
+  },
+  {
+    "component_name": "rhombus",
+    "visual_features": "菱形（扑克牌风格）",
+    "core_semantic": "菱形",
+    "use_cases": ["几何图形", "形状工具", "装饰"],
+    "synonyms": ["rhombus", "菱形"]
+  },
+  {
+    "component_name": "right-trapezoid",
+    "visual_features": "直角梯形",
+    "core_semantic": "直角梯形",
+    "use_cases": ["几何图形", "形状工具"],
+    "synonyms": ["right trapezoid", "直角梯形"]
+  },
+  {
+    "component_name": "semicircle",
+    "visual_features": "半圆",
+    "core_semantic": "半圆",
+    "use_cases": ["几何图形", "形状工具", "进度指示"],
+    "synonyms": ["semicircle", "半圆"]
+  },
+  {
+    "component_name": "seven-pointed-star",
+    "visual_features": "七角星",
+    "core_semantic": "七角星",
+    "use_cases": ["特殊评级", "装饰", "神秘主题"],
+    "synonyms": ["seven-pointed star", "七角星"]
+  },
+  {
+    "component_name": "shapes",
+    "visual_features": "多种几何图形叠在一起",
+    "core_semantic": "形状集合",
+    "use_cases": ["形状工具", "设计面板"],
+    "synonyms": ["shapes", "形状", "几何图形"]
+  },
+  {
+    "component_name": "six-pointed-star",
+    "visual_features": "六角星/大卫之星（两个三角形重叠）",
+    "core_semantic": "六角星",
+    "use_cases": ["特殊标记", "装饰", "几何图形"],
+    "synonyms": ["six-pointed star", "六角星", "大卫之星"]
+  },
+  {
+    "component_name": "square",
+    "visual_features": "正方形",
+    "core_semantic": "正方形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["square", "正方形"]
+  },
+  {
+    "component_name": "three-pointed-star",
+    "visual_features": "三角星/三芒星",
+    "core_semantic": "三角星",
+    "use_cases": ["特殊符号", "装饰", "图标"],
+    "synonyms": ["three-pointed star", "三角星", "三芒星"]
+  },
+  {
+    "component_name": "three-quarter-circle",
+    "visual_features": "四分之三圆",
+    "core_semantic": "四分之三圆",
+    "use_cases": ["加载进度", "饼图", "状态指示"],
+    "synonyms": ["three-quarter circle", "四分之三圆"]
+  },
+  {
+    "component_name": "trapezoid",
+    "visual_features": "等腰梯形",
+    "core_semantic": "等腰梯形",
+    "use_cases": ["几何图形", "形状工具"],
+    "synonyms": ["trapezoid", "梯形", "等腰梯形"]
+  },
+  {
+    "component_name": "triangle",
+    "visual_features": "直角三角形",
+    "core_semantic": "直角三角形",
+    "use_cases": ["几何图形", "形状工具", "UI元素"],
+    "synonyms": ["triangle", "三角形", "直角三角形"]
+  },
+
+  // ==================== 2-items ====================
+  // 前半部分来自原始录入，后半部分为对话补充修正
+  {
+    "component_name": "attach",
+    "visual_features": "回形针",
+    "core_semantic": "附件/回形针",
+    "use_cases": ["邮件附件", "文件关联", "连接功能"],
+    "synonyms": ["attach", "附件", "回形针"]
+  },
+  {
+    "component_name": "axe",
+    "visual_features": "一把斧头（带柄的斧刃）",
+    "core_semantic": "斧头",
+    "use_cases": ["工具", "武器", "砍伐/破坏"],
+    "synonyms": ["axe", "斧头", "斧子"]
+  },
+  {
+    "component_name": "backpack",
+    "visual_features": "双肩背包",
+    "core_semantic": "背包",
+    "use_cases": ["背包", "物品栏", "旅行"],
+    "synonyms": ["backpack", "背包", "双肩包"]
+  },
+  {
+    "component_name": "basketball",
+    "visual_features": "篮球",
+    "core_semantic": "篮球",
+    "use_cases": ["运动", "游戏", "体育"],
+    "synonyms": ["basketball", "篮球"]
+  },
+  {
+    "component_name": "binoculars",
+    "visual_features": "双筒望远镜",
+    "core_semantic": "望远镜",
+    "use_cases": ["观察", "搜索", "侦察"],
+    "synonyms": ["binoculars", "望远镜", "双筒望远镜"]
+  },
+  {
+    "component_name": "bone",
+    "visual_features": "一根骨头",
+    "core_semantic": "骨头",
+    "use_cases": ["宠物", "食物", "武器", "装饰"],
+    "synonyms": ["bone", "骨头"]
+  },
+  {
+    "component_name": "book",
+    "visual_features": "一本书",
+    "core_semantic": "书本",
+    "use_cases": ["知识", "阅读", "教程", "文档"],
+    "synonyms": ["book", "书", "书本"]
+  },
+  {
+    "component_name": "bullhorn",
+    "visual_features": "扩音喇叭/喊话器",
+    "core_semantic": "喇叭/扩音器",
+    "use_cases": ["公告", "宣传", "通知", "音量"],
+    "synonyms": ["bullhorn", "喇叭", "扩音器", "喊话器"]
+  },
+  {
+    "component_name": "chest",
+    "visual_features": "宝箱/箱子",
+    "core_semantic": "宝箱",
+    "use_cases": ["奖励", "储物", "寻宝"],
+    "synonyms": ["chest", "宝箱", "箱子"]
+  },
+  {
+    "component_name": "coin",
+    "visual_features": "字母 C 图标",
+    "core_semantic": "硬币/货币（C字母）",
+    "use_cases": ["货币", "金币", "支付"],
+    "synonyms": ["coin", "硬币", "C", "货币"]
+  },
+  {
+    "component_name": "compass",
+    "visual_features": "指南针/罗盘",
+    "core_semantic": "指南针",
+    "use_cases": ["导航", "方向", "探索"],
+    "synonyms": ["compass", "指南针", "罗盘"]
+  },
+  {
+    "component_name": "Diamond-02",
+    "visual_features": "带切割线的钻石",
+    "core_semantic": "钻石（有切割线）",
+    "use_cases": ["宝石", "奖励", "稀有物品"],
+    "synonyms": ["diamond", "钻石", "02"]
+  },
+  {
+    "component_name": "diamond",
+    "visual_features": "钻石（无切割线，基础形状）",
+    "core_semantic": "钻石（基础款）",
+    "use_cases": ["宝石", "奖励", "稀有物品"],
+    "synonyms": ["diamond", "钻石"]
+  },
+  {
+    "component_name": "Dumbbell-02",
+    "visual_features": "杠铃/哑铃（双头加重版）",
+    "core_semantic": "杠铃/哑铃",
+    "use_cases": ["健身", "力量", "训练"],
+    "synonyms": ["dumbbell", "杠铃", "哑铃", "02"]
+  },
+  {
+    "component_name": "Dumbbell",
+    "visual_features": "标准哑铃（基础样式）",
+    "core_semantic": "哑铃（基础款）",
+    "use_cases": ["健身", "力量", "训练"],
+    "synonyms": ["dumbbell", "哑铃"]
+  },
+  {
+    "component_name": "fishhook",
+    "visual_features": "鱼钩",
+    "core_semantic": "鱼钩",
+    "use_cases": ["钓鱼", "诱饵", "道具"],
+    "synonyms": ["fishhook", "鱼钩"]
+  },
+  {
+    "component_name": "fishing-rod",
+    "visual_features": "钓鱼竿，带鱼线和鱼钩",
+    "core_semantic": "钓鱼竿",
+    "use_cases": ["钓鱼活动", "垂钓游戏", "渔具"],
+    "synonyms": ["fishing rod", "鱼竿", "钓竿"]
+  },
+  {
+    "component_name": "funnel",
+    "visual_features": "漏斗",
+    "core_semantic": "漏斗/过滤",
+    "use_cases": ["数据筛选", "过滤工具", "实验室"],
+    "synonyms": ["funnel", "漏斗", "过滤"]
+  },
+  {
+    "component_name": "hair-dryer",
+    "visual_features": "吹风机",
+    "core_semantic": "吹风机/干发",
+    "use_cases": ["美发护理", "个人护理", "美容"],
+    "synonyms": ["hair dryer", "吹风筒"]
+  },
+  {
+    "component_name": "hammer-02",
+    "visual_features": "一头尖一头钝（羊角锤）",
+    "core_semantic": "羊角锤/拔钉锤",
+    "use_cases": ["工具", "建造", "拔钉子"],
+    "synonyms": ["hammer", "羊角锤", "拔钉锤"]
+  },
+  {
+    "component_name": "hammer",
+    "visual_features": "两头平整的标准锤子",
+    "core_semantic": "锤子（基础款）",
+    "use_cases": ["工具", "建造", "维修"],
+    "synonyms": ["hammer", "锤子", "铁锤"]
+  },
+  {
+    "component_name": "hayfork",
+    "visual_features": "三叉干草叉",
+    "core_semantic": "草叉/三叉戟",
+    "use_cases": ["农场", "农业", "武器"],
+    "synonyms": ["hayfork", "草叉", "三叉"]
+  },
+  {
+    "component_name": "ingot",
+    "visual_features": "三块叠放的金砖",
+    "core_semantic": "金条/金属锭",
+    "use_cases": ["资源", "货币", "锻造材料"],
+    "synonyms": ["ingot", "金砖", "金属锭"]
+  },
+  {
+    "component_name": "key",
+    "visual_features": "钥匙",
+    "core_semantic": "钥匙/解锁",
+    "use_cases": ["解锁", "权限", "密码"],
+    "synonyms": ["key", "钥匙", "密钥"]
+  },
+  {
+    "component_name": "light",
+    "visual_features": "灯泡 💡",
+    "core_semantic": "灯泡/光源",
+    "use_cases": ["照明", "灵感", "提示"],
+    "synonyms": ["light", "灯泡", "灵感"]
+  },
+  {
+    "component_name": "magnet",
+    "visual_features": "U形磁铁",
+    "core_semantic": "磁铁/吸引",
+    "use_cases": ["物理", "吸附", "连接"],
+    "synonyms": ["magnet", "磁铁", "马蹄铁"]
+  },
+  {
+    "component_name": "map",
+    "visual_features": "一张带有X标记的纸",
+    "core_semantic": "地图/藏宝图",
+    "use_cases": ["导航", "探索", "任务提示"],
+    "synonyms": ["map", "地图", "X标记"]
+  },
+  {
+    "component_name": "medical-kit",
+    "visual_features": "带红十字标志的手提包",
+    "core_semantic": "医疗箱/急救包",
+    "use_cases": ["治疗", "急救", "医疗补给"],
+    "synonyms": ["medical kit", "急救包", "医疗箱"]
+  },
+  {
+    "component_name": "nail",
+    "visual_features": "一根细长钉子",
+    "core_semantic": "钉子",
+    "use_cases": ["固定", "建造", "道具"],
+    "synonyms": ["nail", "钉子"]
+  },
+  {
+    "component_name": "nails",
+    "visual_features": "两根钉子交叉",
+    "core_semantic": "多个钉子",
+    "use_cases": ["批量材料", "工具组"],
+    "synonyms": ["nails", "钉子组"]
+  },
+  {
+    "component_name": "paint-roller",
+    "visual_features": "滚筒刷",
+    "core_semantic": "油漆滚筒",
+    "use_cases": ["粉刷", "装修", "设计"],
+    "synonyms": ["paint roller", "滚筒刷"]
+  },
+  {
+    "component_name": "paper-boat",
+    "visual_features": "形状似皇冠的纸船",
+    "core_semantic": "纸船（折纸风格）",
+    "use_cases": ["童趣", "创意", "水/漂流主题"],
+    "synonyms": ["paper boat", "纸船", "折纸"]
+  },
+  {
+    "component_name": "paper-plane",
+    "visual_features": "向右飞的纸飞机",
+    "core_semantic": "纸飞机",
+    "use_cases": ["发送", "消息", "创意"],
+    "synonyms": ["paper plane", "纸飞机"]
+  },
+  {
+    "component_name": "pickaxe",
+    "visual_features": "镐/鹤嘴锄",
+    "core_semantic": "镐子",
+    "use_cases": ["采矿", "挖掘", "工具"],
+    "synonyms": ["pickaxe", "镐", "矿镐"]
+  },
+  {
+    "component_name": "pill",
+    "visual_features": "药丸/胶囊",
+    "core_semantic": "药品",
+    "use_cases": ["治疗", "恢复", "医疗"],
+    "synonyms": ["pill", "药丸", "胶囊"]
+  },
+  {
+    "component_name": "plastic-bag",
+    "visual_features": "带反光的手提袋",
+    "core_semantic": "塑料袋/购物袋",
+    "use_cases": ["购物", "携带", "零售"],
+    "synonyms": ["plastic bag", "塑料袋", "手提袋"]
+  },
+  {
+    "component_name": "pushpin",
+    "visual_features": "图钉/定位标记",
+    "core_semantic": "图钉",
+    "use_cases": ["标记", "固定", "备忘录"],
+    "synonyms": ["pushpin", "图钉", "定位"]
+  },
+  {
+    "component_name": "ruler-02",
+    "visual_features": "带刻度的三角尺",
+    "core_semantic": "三角尺",
+    "use_cases": ["测量角度", "几何绘图"],
+    "synonyms": ["ruler", "三角尺", "量角器"]
+  },
+  {
+    "component_name": "ruler-03",
+    "visual_features": "量角器",
+    "core_semantic": "量角器",
+    "use_cases": ["测量角度", "数学工具"],
+    "synonyms": ["protractor", "量角器"]
+  },
+  {
+    "component_name": "ruler",
+    "visual_features": "直尺",
+    "core_semantic": "直尺/刻度尺",
+    "use_cases": ["测量长度", "画直线"],
+    "synonyms": ["ruler", "直尺"]
+  },
+  {
+    "component_name": "saw",
+    "visual_features": "锯子",
+    "core_semantic": "锯子",
+    "use_cases": ["切割", "木工", "工具"],
+    "synonyms": ["saw", "锯"]
+  },
+  {
+    "component_name": "scissors",
+    "visual_features": "剪刀",
+    "core_semantic": "剪刀",
+    "use_cases": ["裁剪", "剪切"],
+    "synonyms": ["scissors", "剪刀"]
+  },
+  {
+    "component_name": "screwdriver",
+    "visual_features": "螺丝刀",
+    "core_semantic": "螺丝刀/改锥",
+    "use_cases": ["维修", "组装", "工具"],
+    "synonyms": ["screwdriver", "螺丝刀", "改锥"]
+  },
+  {
+    "component_name": "shovel",
+    "visual_features": "铲子",
+    "core_semantic": "铲子/铁锹",
+    "use_cases": ["挖掘", "施工", "园艺"],
+    "synonyms": ["shovel", "铲子", "铁锹"]
+  },
+  {
+    "component_name": "sickle",
+    "visual_features": "镰刀",
+    "core_semantic": "镰刀",
+    "use_cases": ["收割", "园艺", "武器"],
+    "synonyms": ["sickle", "镰刀"]
+  },
+  {
+    "component_name": "soccer",
+    "visual_features": "足球",
+    "core_semantic": "足球",
+    "use_cases": ["体育", "游戏", "运动"],
+    "synonyms": ["soccer", "足球"]
+  },
+  {
+    "component_name": "star-coin-02",
+    "visual_features": "⭐️ 星形硬币",
+    "core_semantic": "星星硬币（星形）",
+    "use_cases": ["稀有货币", "积分", "奖励"],
+    "synonyms": ["star coin", "星币"]
+  },
+  {
+    "component_name": "star-coin",
+    "visual_features": "四角星硬币",
+    "core_semantic": "星星硬币（四角星）",
+    "use_cases": ["通用货币", "积分"],
+    "synonyms": ["star coin", "四角星币"]
+  },
+  {
+    "component_name": "sycee",
+    "visual_features": "元宝/银锭",
+    "core_semantic": "元宝",
+    "use_cases": ["财富", "高级货币", "传统金融"],
+    "synonyms": ["sycee", "元宝", "银锭"]
+  },
+  {
+    "component_name": "toilet-paper",
+    "visual_features": "卷纸",
+    "core_semantic": "卫生纸/卷纸",
+    "use_cases": ["卫生间", "清洁", "消耗品"],
+    "synonyms": ["toilet paper", "卷纸"]
+  },
+  {
+    "component_name": "toilet-sucker",
+    "visual_features": "马桶吸/皮搋子",
+    "core_semantic": "疏通器",
+    "use_cases": ["管道疏通", "维修"],
+    "synonyms": ["toilet sucker", "皮搋子"]
+  },
+  {
+    "component_name": "tool-kit",
+    "visual_features": "打开的工具箱",
+    "core_semantic": "工具箱",
+    "use_cases": ["维修", "组装", "工具集合"],
+    "synonyms": ["tool kit", "工具箱"]
+  },
+  {
+    "component_name": "umbrella",
+    "visual_features": "打开的雨伞",
+    "core_semantic": "雨伞/遮阳伞",
+    "use_cases": ["防雨", "遮阳", "保护"],
+    "synonyms": ["umbrella", "雨伞"]
+  },
+  {
+    "component_name": "wrench",
+    "visual_features": "扳手",
+    "core_semantic": "扳手",
+    "use_cases": ["修理", "拧螺栓", "工具"],
+    "synonyms": ["wrench", "扳手"]
+  },
+
+  // ==================== 3-gear ====================
+  {
+    "component_name": "arrow",
+    "visual_features": "向上的箭矢",
+    "core_semantic": "箭矢（向上）",
+    "use_cases": ["方向指示", "弹药", "导航"],
+    "synonyms": ["arrow", "箭"]
+  },
+  {
+    "component_name": "baseball-bat",
+    "visual_features": "棒球棍",
+    "core_semantic": "棒球棍",
+    "use_cases": ["体育", "近战武器"],
+    "synonyms": ["baseball bat", "棒球棍"]
+  },
+  {
+    "component_name": "bomb",
+    "visual_features": "带引信的炸弹",
+    "core_semantic": "炸弹",
+    "use_cases": ["爆炸", "武器", "道具"],
+    "synonyms": ["bomb", "炸弹"]
+  },
+  {
+    "component_name": "bow",
+    "visual_features": "弓（不带箭）",
+    "core_semantic": "弓",
+    "use_cases": ["远程武器", "射箭"],
+    "synonyms": ["bow", "弓"]
+  },
+  {
+    "component_name": "broadsword-02",
+    "visual_features": "阔剑/大剑（细节变体）",
+    "core_semantic": "大剑变体",
+    "use_cases": ["重型武器", "战士装备"],
+    "synonyms": ["broadsword", "大剑"]
+  },
+  {
+    "component_name": "broadsword",
+    "visual_features": "小一点的阔剑",
+    "core_semantic": "大剑（基础款）",
+    "use_cases": ["近战武器", "战士"],
+    "synonyms": ["broadsword", "大剑"]
+  },
+  {
+    "component_name": "bullet",
+    "visual_features": "三个并排子弹",
+    "core_semantic": "子弹/弹药",
+    "use_cases": ["射击", "弹药", "消耗品"],
+    "synonyms": ["bullet", "子弹"]
+  },
+  {
+    "component_name": "bulletproof-vest",
+    "visual_features": "防弹背心",
+    "core_semantic": "防弹衣",
+    "use_cases": ["防御装备", "军事"],
+    "synonyms": ["bulletproof vest", "防弹背心"]
+  },
+  {
+    "component_name": "coat",
+    "visual_features": "外套/大衣",
+    "core_semantic": "外套",
+    "use_cases": ["防寒装备", "外观"],
+    "synonyms": ["coat", "外套", "大衣"]
+  },
+  {
+    "component_name": "crown",
+    "visual_features": "皇冠",
+    "core_semantic": "王冠",
+    "use_cases": ["王者", "胜利", "VIP"],
+    "synonyms": ["crown", "皇冠"]
+  },
+  {
+    "component_name": "dagger",
+    "visual_features": "匕首",
+    "core_semantic": "匕首",
+    "use_cases": ["刺杀武器", "近战"],
+    "synonyms": ["dagger", "匕首"]
+  },
+  {
+    "component_name": "dress",
+    "visual_features": "连衣裙",
+    "core_semantic": "连衣裙/礼服",
+    "use_cases": ["女性装备", "外观"],
+    "synonyms": ["dress", "连衣裙"]
+  },
+  {
+    "component_name": "earring",
+    "visual_features": "吊坠耳环",
+    "core_semantic": "耳环",
+    "use_cases": ["首饰", "属性加成", "外观"],
+    "synonyms": ["earring", "耳环"]
+  },
+  {
+    "component_name": "high-heels",
+    "visual_features": "高跟鞋",
+    "core_semantic": "高跟鞋",
+    "use_cases": ["女性装备", "外观"],
+    "synonyms": ["high heels", "高跟鞋"]
+  },
+  {
+    "component_name": "horn",
+    "visual_features": "两个镜像的号角",
+    "core_semantic": "号角/喇叭",
+    "use_cases": ["信号", "集结", "乐器"],
+    "synonyms": ["horn", "号角"]
+  },
+  {
+    "component_name": "long-sleeve",
+    "visual_features": "长袖上衣",
+    "core_semantic": "长袖衣",
+    "use_cases": ["防具", "外观"],
+    "synonyms": ["long sleeve", "长袖"]
+  },
+  {
+    "component_name": "mace",
+    "visual_features": "钉头锤/权杖",
+    "core_semantic": "钉头锤",
+    "use_cases": ["钝器", "重击武器"],
+    "synonyms": ["mace", "钉头锤"]
+  },
+  {
+    "component_name": "magazine",
+    "visual_features": "弹匣/弹夹",
+    "core_semantic": "弹匣",
+    "use_cases": ["枪械配件", "弹药"],
+    "synonyms": ["magazine", "弹匣"]
+  },
+  {
+    "component_name": "missile",
+    "visual_features": "导弹",
+    "core_semantic": "导弹",
+    "use_cases": ["远程打击", "武器"],
+    "synonyms": ["missile", "导弹"]
+  },
+  {
+    "component_name": "necklace",
+    "visual_features": "项链",
+    "core_semantic": "项链",
+    "use_cases": ["首饰", "属性", "外观"],
+    "synonyms": ["necklace", "项链"]
+  },
+  {
+    "component_name": "necktie",
+    "visual_features": "领带",
+    "core_semantic": "领带",
+    "use_cases": ["正装", "外观"],
+    "synonyms": ["necktie", "领带"]
+  },
+  {
+    "component_name": "pants",
+    "visual_features": "裤子",
+    "core_semantic": "裤子",
+    "use_cases": ["下装防具", "外观"],
+    "synonyms": ["pants", "裤子"]
+  },
+  {
+    "component_name": "pistol",
+    "visual_features": "手枪",
+    "core_semantic": "手枪",
+    "use_cases": ["单手武器", "射击"],
+    "synonyms": ["pistol", "手枪"]
+  },
+  {
+    "component_name": "ring",
+    "visual_features": "戒指",
+    "core_semantic": "戒指",
+    "use_cases": ["首饰", "魔法道具"],
+    "synonyms": ["ring", "戒指"]
+  },
+  {
+    "component_name": "shield-02",
+    "visual_features": "圆角盾牌",
+    "core_semantic": "盾牌（圆角）",
+    "use_cases": ["防御", "格挡"],
+    "synonyms": ["shield", "圆角盾"]
+  },
+  {
+    "component_name": "shield-03",
+    "visual_features": "更圆的盾牌",
+    "core_semantic": "盾牌（更圆）",
+    "use_cases": ["防御装备"],
+    "synonyms": ["shield", "圆盾"]
+  },
+  {
+    "component_name": "shield",
+    "visual_features": "尖锐底的基础盾牌",
+    "core_semantic": "盾牌（基础款）",
+    "use_cases": ["防御", "保护"],
+    "synonyms": ["shield", "盾牌"]
+  },
+  {
+    "component_name": "shirt",
+    "visual_features": "短袖上衣",
+    "core_semantic": "衬衫/短袖",
+    "use_cases": ["上衣防具", "外观"],
+    "synonyms": ["shirt", "短袖"]
+  },
+  {
+    "component_name": "shoe",
+    "visual_features": "一只鞋",
+    "core_semantic": "鞋子",
+    "use_cases": ["足部装备", "移动速度"],
+    "synonyms": ["shoe", "鞋子"]
+  },
+  {
+    "component_name": "shorts",
+    "visual_features": "短裤",
+    "core_semantic": "短裤",
+    "use_cases": ["下装", "外观"],
+    "synonyms": ["shorts", "短裤"]
+  },
+  {
+    "component_name": "skirt",
+    "visual_features": "裙子",
+    "core_semantic": "裙子",
+    "use_cases": ["女性下装", "外观"],
+    "synonyms": ["skirt", "裙子"]
+  },
+  {
+    "component_name": "spear",
+    "visual_features": "向上的长矛",
+    "core_semantic": "矛",
+    "use_cases": ["长柄武器", "狩猎"],
+    "synonyms": ["spear", "矛"]
+  },
+  {
+    "component_name": "stick",
+    "visual_features": "两节垂直短棍",
+    "core_semantic": "棍棒",
+    "use_cases": ["基础武器", "钝器"],
+    "synonyms": ["stick", "棍"]
+  },
+  {
+    "component_name": "sword",
+    "visual_features": "双刃剑",
+    "core_semantic": "剑",
+    "use_cases": ["近战武器", "骑士"],
+    "synonyms": ["sword", "剑", "双刃剑"]
+  },
+  {
+    "component_name": "trident",
+    "visual_features": "三叉戟",
+    "core_semantic": "三叉戟",
+    "use_cases": ["海神武器", "长柄"],
+    "synonyms": ["trident", "三叉戟"]
+  },
+  {
+    "component_name": "viking-helmet",
+    "visual_features": "维京头盔（带角）",
+    "core_semantic": "维京头盔",
+    "use_cases": ["头盔", "北欧主题"],
+    "synonyms": ["viking helmet", "维京头盔"]
+  },
+  {
+    "component_name": "wand-02",
+    "visual_features": "简洁魔杖（无中央魔力）",
+    "core_semantic": "魔法棒（简洁款）",
+    "use_cases": ["魔法", "施法"],
+    "synonyms": ["wand", "魔杖"]
+  },
+  {
+    "component_name": "wand-03",
+    "visual_features": "流星锤形状的法杖",
+    "core_semantic": "流星锤/法杖",
+    "use_cases": ["魔法", "武器"],
+    "synonyms": ["wand", "流星锤"]
+  },
+  {
+    "component_name": "wand",
+    "visual_features": "经典法杖，中间有魔力光芒/飘带",
+    "core_semantic": "法杖（经典版）",
+    "use_cases": ["施法", "魔法攻击"],
+    "synonyms": ["wand", "法杖", "魔杖"]
+  },
+  // warrior 系列省略视觉特征，仅给出语义
+  {
+    "component_name": "warrior-belt-lv1",
+    "visual_features": "战士腰带等级1",
+    "core_semantic": "战士腰带 Lv1",
+    "use_cases": ["腰部装备", "升级体系"],
+    "synonyms": ["warrior belt lv1"]
+  },
+  {
+    "component_name": "warrior-belt-lv2",
+    "visual_features": "战士腰带等级2",
+    "core_semantic": "战士腰带 Lv2",
+    "use_cases": ["腰部装备"],
+    "synonyms": ["warrior belt lv2"]
+  },
+  {
+    "component_name": "warrior-belt-lv3",
+    "visual_features": "战士腰带等级3",
+    "core_semantic": "战士腰带 Lv3",
+    "use_cases": ["腰部装备"],
+    "synonyms": ["warrior belt lv3"]
+  },
+  {
+    "component_name": "warrior-belt-lv4",
+    "visual_features": "战士腰带等级4",
+    "core_semantic": "战士腰带 Lv4",
+    "use_cases": ["腰部装备"],
+    "synonyms": ["warrior belt lv4"]
+  },
+  {
+    "component_name": "warrior-boots-lv1",
+    "visual_features": "战士靴子等级1",
+    "core_semantic": "战士靴 Lv1",
+    "use_cases": ["足部装备"],
+    "synonyms": ["warrior boots lv1"]
+  },
+  {
+    "component_name": "warrior-boots-lv2",
+    "visual_features": "战士靴子等级2",
+    "core_semantic": "战士靴 Lv2",
+    "use_cases": ["足部装备"],
+    "synonyms": ["warrior boots lv2"]
+  },
+  {
+    "component_name": "warrior-boots-lv3",
+    "visual_features": "战士靴子等级3",
+    "core_semantic": "战士靴 Lv3",
+    "use_cases": ["足部装备"],
+    "synonyms": ["warrior boots lv3"]
+  },
+  {
+    "component_name": "warrior-boots-lv4",
+    "visual_features": "战士靴子等级4",
+    "core_semantic": "战士靴 Lv4",
+    "use_cases": ["足部装备"],
+    "synonyms": ["warrior boots lv4"]
+  },
+  {
+    "component_name": "warrior-chestplate-lv1",
+    "visual_features": "战士胸甲等级1",
+    "core_semantic": "战士胸甲 Lv1",
+    "use_cases": ["上身躯干装备"],
+    "synonyms": ["warrior chestplate lv1"]
+  },
+  {
+    "component_name": "warrior-chestplate-lv2",
+    "visual_features": "战士胸甲等级2",
+    "core_semantic": "战士胸甲 Lv2",
+    "use_cases": ["上身躯干装备"],
+    "synonyms": ["warrior chestplate lv2"]
+  },
+  {
+    "component_name": "warrior-chestplate-lv3",
+    "visual_features": "战士胸甲等级3",
+    "core_semantic": "战士胸甲 Lv3",
+    "use_cases": ["上身躯干装备"],
+    "synonyms": ["warrior chestplate lv3"]
+  },
+  {
+    "component_name": "warrior-chestplate-lv4",
+    "visual_features": "战士胸甲等级4",
+    "core_semantic": "战士胸甲 Lv4",
+    "use_cases": ["上身躯干装备"],
+    "synonyms": ["warrior chestplate lv4"]
+  },
+  {
+    "component_name": "warrior-gloves-lv1",
+    "visual_features": "战士手套等级1",
+    "core_semantic": "战士手套 Lv1",
+    "use_cases": ["手部装备"],
+    "synonyms": ["warrior gloves lv1"]
+  },
+  {
+    "component_name": "warrior-gloves-lv2",
+    "visual_features": "战士手套等级2",
+    "core_semantic": "战士手套 Lv2",
+    "use_cases": ["手部装备"],
+    "synonyms": ["warrior gloves lv2"]
+  },
+  {
+    "component_name": "warrior-gloves-lv3",
+    "visual_features": "战士手套等级3",
+    "core_semantic": "战士手套 Lv3",
+    "use_cases": ["手部装备"],
+    "synonyms": ["warrior gloves lv3"]
+  },
+  {
+    "component_name": "warrior-gloves-lv4",
+    "visual_features": "战士手套等级4",
+    "core_semantic": "战士手套 Lv4",
+    "use_cases": ["手部装备"],
+    "synonyms": ["warrior gloves lv4"]
+  },
+  {
+    "component_name": "warrior-helmet-lv1",
+    "visual_features": "战士头盔等级1",
+    "core_semantic": "战士头盔 Lv1",
+    "use_cases": ["头部装备"],
+    "synonyms": ["warrior helmet lv1"]
+  },
+  {
+    "component_name": "warrior-helmet-lv2",
+    "visual_features": "战士头盔等级2",
+    "core_semantic": "战士头盔 Lv2",
+    "use_cases": ["头部装备"],
+    "synonyms": ["warrior helmet lv2"]
+  },
+  {
+    "component_name": "warrior-helmet-lv3",
+    "visual_features": "战士头盔等级3",
+    "core_semantic": "战士头盔 Lv3",
+    "use_cases": ["头部装备"],
+    "synonyms": ["warrior helmet lv3"]
+  },
+  {
+    "component_name": "warrior-helmet-lv4",
+    "visual_features": "战士头盔等级4",
+    "core_semantic": "战士头盔 Lv4",
+    "use_cases": ["头部装备"],
+    "synonyms": ["warrior helmet lv4"]
+  },
+  {
+    "component_name": "warrior-leggings-lv1",
+    "visual_features": "战士护腿等级1",
+    "core_semantic": "战士护腿 Lv1",
+    "use_cases": ["腿部装备"],
+    "synonyms": ["warrior leggings lv1"]
+  },
+  {
+    "component_name": "warrior-leggings-lv2",
+    "visual_features": "战士护腿等级2",
+    "core_semantic": "战士护腿 Lv2",
+    "use_cases": ["腿部装备"],
+    "synonyms": ["warrior leggings lv2"]
+  },
+  {
+    "component_name": "warrior-leggings-lv3",
+    "visual_features": "战士护腿等级3",
+    "core_semantic": "战士护腿 Lv3",
+    "use_cases": ["腿部装备"],
+    "synonyms": ["warrior leggings lv3"]
+  },
+  {
+    "component_name": "warrior-leggings-lv4",
+    "visual_features": "战士护腿等级4",
+    "core_semantic": "战士护腿 Lv4",
+    "use_cases": ["腿部装备"],
+    "synonyms": ["warrior leggings lv4"]
+  },
+  {
+    "component_name": "warrior-shoulders-lv1",
+    "visual_features": "战士肩甲等级1",
+    "core_semantic": "战士肩甲 Lv1",
+    "use_cases": ["肩部装备"],
+    "synonyms": ["warrior shoulders lv1"]
+  },
+  {
+    "component_name": "warrior-shoulders-lv2",
+    "visual_features": "战士肩甲等级2",
+    "core_semantic": "战士肩甲 Lv2",
+    "use_cases": ["肩部装备"],
+    "synonyms": ["warrior shoulders lv2"]
+  },
+  {
+    "component_name": "warrior-shoulders-lv3",
+    "visual_features": "战士肩甲等级3",
+    "core_semantic": "战士肩甲 Lv3",
+    "use_cases": ["肩部装备"],
+    "synonyms": ["warrior shoulders lv3"]
+  },
+  {
+    "component_name": "warrior-shoulders-lv4",
+    "visual_features": "战士肩甲等级4",
+    "core_semantic": "战士肩甲 Lv4",
+    "use_cases": ["肩部装备"],
+    "synonyms": ["warrior shoulders lv4"]
+  },
+
+  // ==================== 4-nature ====================
+  {
+    "component_name": "animal",
+    "visual_features": "爪子印",
+    "core_semantic": "动物/爪印",
+    "use_cases": ["野生动物", "宠物"],
+    "synonyms": ["animal", "爪印"]
+  },
+  {
+    "component_name": "bamboo-shoots",
+    "visual_features": "竹子",
+    "core_semantic": "竹子",
+    "use_cases": ["植物", "东方主题"],
+    "synonyms": ["bamboo", "竹"]
+  },
+  {
+    "component_name": "bamboo",
+    "visual_features": "竹笋",
+    "core_semantic": "竹笋",
+    "use_cases": ["食材", "植物"],
+    "synonyms": ["bamboo shoot", "笋"]
+  },
+  {
+    "component_name": "bear",
+    "visual_features": "熊头",
+    "core_semantic": "熊",
+    "use_cases": ["野生动物", "猛兽"],
+    "synonyms": ["bear", "熊"]
+  },
+  {
+    "component_name": "bulrush",
+    "visual_features": "芦苇/香蒲",
+    "core_semantic": "芦苇",
+    "use_cases": ["湿地植物", "自然"],
+    "synonyms": ["bulrush", "芦苇"]
+  },
+  {
+    "component_name": "drought",
+    "visual_features": "枯裂土地",
+    "core_semantic": "干旱",
+    "use_cases": ["自然灾害", "环境"],
+    "synonyms": ["drought", "干旱"]
+  },
+  {
+    "component_name": "earthquake",
+    "visual_features": "石头中间裂开",
+    "core_semantic": "地震",
+    "use_cases": ["灾害", "震动"],
+    "synonyms": ["earthquake", "地震"]
+  },
+  {
+    "component_name": "meteor",
+    "visual_features": "陨石",
+    "core_semantic": "流星/陨石",
+    "use_cases": ["天文", "灾害"],
+    "synonyms": ["meteor", "陨石"]
+  },
+  {
+    "component_name": "stone",
+    "visual_features": "石头",
+    "core_semantic": "岩石",
+    "use_cases": ["地形", "材料"],
+    "synonyms": ["stone", "石头"]
+  },
+  {
+    "component_name": "volcanic-eruption",
+    "visual_features": "冒烟的火山",
+    "core_semantic": "火山喷发",
+    "use_cases": ["灾害", "地质"],
+    "synonyms": ["volcano", "火山"]
+  },
+  {
+    "component_name": "wood",
+    "visual_features": "原木",
+    "core_semantic": "木材/原木",
+    "use_cases": ["材料", "建筑"],
+    "synonyms": ["wood", "原木"]
+  },
+  // 其余自然图标基于名称推断
+  {
+    "component_name": "cactus",
+    "visual_features": "仙人掌",
+    "core_semantic": "仙人掌",
+    "use_cases": ["沙漠", "植物"],
+    "synonyms": ["cactus"]
+  },
+  {
+    "component_name": "cat",
+    "visual_features": "猫",
+    "core_semantic": "猫",
+    "use_cases": ["宠物", "动物"],
+    "synonyms": ["cat"]
+  },
+  {
+    "component_name": "cloud",
+    "visual_features": "云",
+    "core_semantic": "云",
+    "use_cases": ["天气", "网络"],
+    "synonyms": ["cloud"]
+  },
+  {
+    "component_name": "cloudy",
+    "visual_features": "多云",
+    "core_semantic": "多云天气",
+    "use_cases": ["天气"],
+    "synonyms": ["cloudy"]
+  },
+  {
+    "component_name": "clover",
+    "visual_features": "三叶草",
+    "core_semantic": "三叶草/幸运",
+    "use_cases": ["植物", "幸运符号"],
+    "synonyms": ["clover"]
+  },
+  {
+    "component_name": "cow",
+    "visual_features": "牛",
+    "core_semantic": "牛",
+    "use_cases": ["农场", "动物"],
+    "synonyms": ["cow"]
+  },
+  {
+    "component_name": "dog",
+    "visual_features": "狗",
+    "core_semantic": "狗",
+    "use_cases": ["宠物", "动物"],
+    "synonyms": ["dog"]
+  },
+  {
+    "component_name": "fire",
+    "visual_features": "火焰",
+    "core_semantic": "火",
+    "use_cases": ["元素", "伤害"],
+    "synonyms": ["fire"]
+  },
+  {
+    "component_name": "fish-02",
+    "visual_features": "鱼（变体）",
+    "core_semantic": "鱼",
+    "use_cases": ["水生动物", "食物"],
+    "synonyms": ["fish"]
+  },
+  {
+    "component_name": "fish",
+    "visual_features": "鱼",
+    "core_semantic": "鱼",
+    "use_cases": ["水生动物", "食物"],
+    "synonyms": ["fish"]
+  },
+  {
+    "component_name": "flood",
+    "visual_features": "洪水/波浪淹没",
+    "core_semantic": "洪水",
+    "use_cases": ["灾害"],
+    "synonyms": ["flood"]
+  },
+  {
+    "component_name": "flower-02",
+    "visual_features": "花（变体）",
+    "core_semantic": "花朵",
+    "use_cases": ["植物", "装饰"],
+    "synonyms": ["flower"]
+  },
+  {
+    "component_name": "flower-03",
+    "visual_features": "花（变体3）",
+    "core_semantic": "花朵",
+    "use_cases": ["植物"],
+    "synonyms": ["flower"]
+  },
+  {
+    "component_name": "flower",
+    "visual_features": "花",
+    "core_semantic": "花",
+    "use_cases": ["植物", "自然"],
+    "synonyms": ["flower"]
+  },
+  {
+    "component_name": "fog",
+    "visual_features": "雾",
+    "core_semantic": "雾",
+    "use_cases": ["天气"],
+    "synonyms": ["fog"]
+  },
+  {
+    "component_name": "forest-02",
+    "visual_features": "森林（变体）",
+    "core_semantic": "森林",
+    "use_cases": ["自然", "环境"],
+    "synonyms": ["forest"]
+  },
+  {
+    "component_name": "forest-03",
+    "visual_features": "森林（变体3）",
+    "core_semantic": "森林",
+    "use_cases": ["自然"],
+    "synonyms": ["forest"]
+  },
+  {
+    "component_name": "forest",
+    "visual_features": "森林",
+    "core_semantic": "森林",
+    "use_cases": ["自然"],
+    "synonyms": ["forest"]
+  },
+  {
+    "component_name": "fox",
+    "visual_features": "狐狸",
+    "core_semantic": "狐狸",
+    "use_cases": ["动物"],
+    "synonyms": ["fox"]
+  },
+  {
+    "component_name": "grass",
+    "visual_features": "草",
+    "core_semantic": "草地",
+    "use_cases": ["植物", "地形"],
+    "synonyms": ["grass"]
+  },
+  {
+    "component_name": "hail",
+    "visual_features": "冰雹",
+    "core_semantic": "冰雹",
+    "use_cases": ["天气"],
+    "synonyms": ["hail"]
+  },
+  {
+    "component_name": "horse",
+    "visual_features": "马",
+    "core_semantic": "马",
+    "use_cases": ["坐骑", "动物"],
+    "synonyms": ["horse"]
+  },
+  {
+    "component_name": "jellyfish",
+    "visual_features": "水母",
+    "core_semantic": "水母",
+    "use_cases": ["海洋生物"],
+    "synonyms": ["jellyfish"]
+  },
+  {
+    "component_name": "leaves",
+    "visual_features": "树叶",
+    "core_semantic": "叶子",
+    "use_cases": ["植物", "自然"],
+    "synonyms": ["leaves"]
+  },
+  {
+    "component_name": "lightning",
+    "visual_features": "闪电",
+    "core_semantic": "闪电",
+    "use_cases": ["天气", "元素"],
+    "synonyms": ["lightning"]
+  },
+  {
+    "component_name": "mountain",
+    "visual_features": "山",
+    "core_semantic": "山",
+    "use_cases": ["地形"],
+    "synonyms": ["mountain"]
+  },
+  {
+    "component_name": "mouse",
+    "visual_features": "老鼠",
+    "core_semantic": "鼠",
+    "use_cases": ["动物"],
+    "synonyms": ["mouse"]
+  },
+  {
+    "component_name": "night",
+    "visual_features": "夜晚/月亮",
+    "core_semantic": "夜晚",
+    "use_cases": ["时间", "暗黑主题"],
+    "synonyms": ["night"]
+  },
+  {
+    "component_name": "panda",
+    "visual_features": "熊猫",
+    "core_semantic": "熊猫",
+    "use_cases": ["动物"],
+    "synonyms": ["panda"]
+  },
+  {
+    "component_name": "pig",
+    "visual_features": "猪",
+    "core_semantic": "猪",
+    "use_cases": ["农场动物"],
+    "synonyms": ["pig"]
+  },
+  {
+    "component_name": "rabbit",
+    "visual_features": "兔子",
+    "core_semantic": "兔子",
+    "use_cases": ["宠物", "动物"],
+    "synonyms": ["rabbit"]
+  },
+  {
+    "component_name": "rain-02",
+    "visual_features": "雨（变体）",
+    "core_semantic": "下雨",
+    "use_cases": ["天气"],
+    "synonyms": ["rain"]
+  },
+  {
+    "component_name": "rain",
+    "visual_features": "雨",
+    "core_semantic": "雨",
+    "use_cases": ["天气"],
+    "synonyms": ["rain"]
+  },
+  {
+    "component_name": "rainbow",
+    "visual_features": "彩虹",
+    "core_semantic": "彩虹",
+    "use_cases": ["天气", "美好"],
+    "synonyms": ["rainbow"]
+  },
+  {
+    "component_name": "river",
+    "visual_features": "河流",
+    "core_semantic": "河流",
+    "use_cases": ["地形", "水源"],
+    "synonyms": ["river"]
+  },
+  {
+    "component_name": "sea",
+    "visual_features": "大海",
+    "core_semantic": "海洋",
+    "use_cases": ["地形"],
+    "synonyms": ["sea"]
+  },
+  {
+    "component_name": "sheep",
+    "visual_features": "羊",
+    "core_semantic": "羊",
+    "use_cases": ["农场"],
+    "synonyms": ["sheep"]
+  },
+  {
+    "component_name": "shrimp",
+    "visual_features": "虾",
+    "core_semantic": "虾",
+    "use_cases": ["海鲜", "食物"],
+    "synonyms": ["shrimp"]
+  },
+  {
+    "component_name": "snowflake",
+    "visual_features": "雪花",
+    "core_semantic": "雪花/冬季",
+    "use_cases": ["天气", "冬季"],
+    "synonyms": ["snowflake"]
+  },
+  {
+    "component_name": "snowy",
+    "visual_features": "下雪",
+    "core_semantic": "雪天",
+    "use_cases": ["天气"],
+    "synonyms": ["snowy"]
+  },
+  {
+    "component_name": "star",
+    "visual_features": "星星",
+    "core_semantic": "星星",
+    "use_cases": ["夜空", "装饰"],
+    "synonyms": ["star"]
+  },
+  {
+    "component_name": "sun-02",
+    "visual_features": "太阳（变体）",
+    "core_semantic": "太阳",
+    "use_cases": ["天气", "光明"],
+    "synonyms": ["sun"]
+  },
+  {
+    "component_name": "sun",
+    "visual_features": "太阳",
+    "core_semantic": "太阳",
+    "use_cases": ["天气", "白天"],
+    "synonyms": ["sun"]
+  },
+  {
+    "component_name": "temperature-down-02",
+    "visual_features": "温度计下降变体",
+    "core_semantic": "降温",
+    "use_cases": ["温度变化"],
+    "synonyms": ["temp down"]
+  },
+  {
+    "component_name": "temperature-down",
+    "visual_features": "温度下降",
+    "core_semantic": "降温",
+    "use_cases": ["温度计"],
+    "synonyms": ["temp down"]
+  },
+  {
+    "component_name": "temperature-up-02",
+    "visual_features": "温度上升变体",
+    "core_semantic": "升温",
+    "use_cases": ["温度变化"],
+    "synonyms": ["temp up"]
+  },
+  {
+    "component_name": "temperature-up",
+    "visual_features": "温度上升",
+    "core_semantic": "升温",
+    "use_cases": ["温度计"],
+    "synonyms": ["temp up"]
+  },
+  {
+    "component_name": "temperature",
+    "visual_features": "温度计",
+    "core_semantic": "温度",
+    "use_cases": ["天气", "发烧"],
+    "synonyms": ["temperature"]
+  },
+  {
+    "component_name": "thunderstorm",
+    "visual_features": "雷暴",
+    "core_semantic": "雷暴",
+    "use_cases": ["天气"],
+    "synonyms": ["thunderstorm"]
+  },
+  {
+    "component_name": "tree-02",
+    "visual_features": "树（变体）",
+    "core_semantic": "树木",
+    "use_cases": ["自然", "植物"],
+    "synonyms": ["tree"]
+  },
+  {
+    "component_name": "tree-03",
+    "visual_features": "树（变体3）",
+    "core_semantic": "树木",
+    "use_cases": ["自然"],
+    "synonyms": ["tree"]
+  },
+  {
+    "component_name": "tree-04",
+    "visual_features": "树（变体4）",
+    "core_semantic": "树木",
+    "use_cases": ["自然"],
+    "synonyms": ["tree"]
+  },
+  {
+    "component_name": "tree",
+    "visual_features": "树",
+    "core_semantic": "树",
+    "use_cases": ["自然", "植物"],
+    "synonyms": ["tree"]
+  },
+  {
+    "component_name": "volcano",
+    "visual_features": "火山（未喷发）",
+    "core_semantic": "火山",
+    "use_cases": ["地质"],
+    "synonyms": ["volcano"]
+  },
+  {
+    "component_name": "water",
+    "visual_features": "水滴/水波",
+    "core_semantic": "水",
+    "use_cases": ["元素", "液体"],
+    "synonyms": ["water"]
+  },
+  {
+    "component_name": "wind",
+    "visual_features": "风/气流",
+    "core_semantic": "风",
+    "use_cases": ["天气", "元素"],
+    "synonyms": ["wind"]
+  },
+  {
+    "component_name": "wolf",
+    "visual_features": "狼",
+    "core_semantic": "狼",
+    "use_cases": ["野生动物"],
+    "synonyms": ["wolf"]
+  },
+
+  // ==================== 5-food ====================
+  {
+    "component_name": "a-bottle-of-water",
+    "visual_features": "有盖子的水壶",
+    "core_semantic": "瓶装水",
+    "use_cases": ["饮水", "补给"],
+    "synonyms": ["water bottle"]
+  },
+  {
+    "component_name": "apple",
+    "visual_features": "苹果",
+    "core_semantic": "苹果",
+    "use_cases": ["水果", "食物"],
+    "synonyms": ["apple"]
+  },
+  {
+    "component_name": "beer",
+    "visual_features": "啤酒",
+    "core_semantic": "啤酒",
+    "use_cases": ["饮品", "酒精"],
+    "synonyms": ["beer"]
+  },
+  {
+    "component_name": "bowl-02",
+    "visual_features": "碗（变体）",
+    "core_semantic": "碗",
+    "use_cases": ["餐具", "食物容器"],
+    "synonyms": ["bowl"]
+  },
+  {
+    "component_name": "bowl",
+    "visual_features": "碗",
+    "core_semantic": "碗",
+    "use_cases": ["餐具"],
+    "synonyms": ["bowl"]
+  },
+  {
+    "component_name": "bread-02",
+    "visual_features": "面包（变体）",
+    "core_semantic": "面包",
+    "use_cases": ["食物"],
+    "synonyms": ["bread"]
+  },
+  {
+    "component_name": "bread",
+    "visual_features": "面包",
+    "core_semantic": "面包",
+    "use_cases": ["食物"],
+    "synonyms": ["bread"]
+  },
+  {
+    "component_name": "carrot",
+    "visual_features": "胡萝卜",
+    "core_semantic": "胡萝卜",
+    "use_cases": ["蔬菜", "食物"],
+    "synonyms": ["carrot"]
+  },
+  {
+    "component_name": "chopsticks",
+    "visual_features": "筷子",
+    "core_semantic": "筷子",
+    "use_cases": ["餐具", "亚洲饮食"],
+    "synonyms": ["chopsticks"]
+  },
+  {
+    "component_name": "drink-02",
+    "visual_features": "饮品（变体）",
+    "core_semantic": "饮料",
+    "use_cases": ["饮品"],
+    "synonyms": ["drink"]
+  },
+  {
+    "component_name": "drink-03",
+    "visual_features": "饮品（变体3）",
+    "core_semantic": "饮料",
+    "use_cases": ["饮品"],
+    "synonyms": ["drink"]
+  },
+  {
+    "component_name": "drink",
+    "visual_features": "饮料杯",
+    "core_semantic": "饮料",
+    "use_cases": ["饮品"],
+    "synonyms": ["drink"]
+  },
+  {
+    "component_name": "eggplant",
+    "visual_features": "茄子",
+    "core_semantic": "茄子",
+    "use_cases": ["蔬菜", "食物"],
+    "synonyms": ["eggplant"]
+  },
+  {
+    "component_name": "fork",
+    "visual_features": "餐叉",
+    "core_semantic": "叉子",
+    "use_cases": ["餐具"],
+    "synonyms": ["fork"]
+  },
+  {
+    "component_name": "glass-of-water",
+    "visual_features": "一杯水",
+    "core_semantic": "水杯",
+    "use_cases": ["饮水"],
+    "synonyms": ["water glass"]
+  },
+  {
+    "component_name": "ham-02",
+    "visual_features": "火腿（变体）",
+    "core_semantic": "火腿",
+    "use_cases": ["肉类", "食物"],
+    "synonyms": ["ham"]
+  },
+  {
+    "component_name": "ham",
+    "visual_features": "火腿",
+    "core_semantic": "火腿",
+    "use_cases": ["肉类"],
+    "synonyms": ["ham"]
+  },
+  {
+    "component_name": "knife",
+    "visual_features": "餐刀",
+    "core_semantic": "刀",
+    "use_cases": ["餐具", "切割"],
+    "synonyms": ["knife"]
+  },
+  {
+    "component_name": "liquor-02",
+    "visual_features": "烈酒（变体）",
+    "core_semantic": "烈酒",
+    "use_cases": ["酒类"],
+    "synonyms": ["liquor"]
+  },
+  {
+    "component_name": "liquor",
+    "visual_features": "烈酒瓶",
+    "core_semantic": "烈酒",
+    "use_cases": ["酒类"],
+    "synonyms": ["liquor"]
+  },
+  {
+    "component_name": "meat-cooked",
+    "visual_features": "熟肉/烤肉",
+    "core_semantic": "熟肉",
+    "use_cases": ["食物"],
+    "synonyms": ["cooked meat"]
+  },
+  {
+    "component_name": "meat",
+    "visual_features": "生肉",
+    "core_semantic": "肉",
+    "use_cases": ["食材"],
+    "synonyms": ["meat"]
+  },
+  {
+    "component_name": "milk",
+    "visual_features": "牛奶",
+    "core_semantic": "牛奶",
+    "use_cases": ["饮品", "乳制品"],
+    "synonyms": ["milk"]
+  },
+  {
+    "component_name": "onigiri",
+    "visual_features": "饭团",
+    "core_semantic": "饭团/寿司饭",
+    "use_cases": ["日本料理", "食物"],
+    "synonyms": ["onigiri"]
+  },
+  {
+    "component_name": "peach",
+    "visual_features": "桃子",
+    "core_semantic": "桃",
+    "use_cases": ["水果"],
+    "synonyms": ["peach"]
+  },
+  {
+    "component_name": "pear",
+    "visual_features": "梨",
+    "core_semantic": "梨",
+    "use_cases": ["水果"],
+    "synonyms": ["pear"]
+  },
+  {
+    "component_name": "plate",
+    "visual_features": "盘子",
+    "core_semantic": "盘子",
+    "use_cases": ["餐具"],
+    "synonyms": ["plate"]
+  },
+  {
+    "component_name": "potato",
+    "visual_features": "土豆",
+    "core_semantic": "土豆",
+    "use_cases": ["蔬菜", "食材"],
+    "synonyms": ["potato"]
+  },
+  {
+    "component_name": "potion-02",
+    "visual_features": "药水（变体）",
+    "core_semantic": "药水",
+    "use_cases": ["魔法药剂"],
+    "synonyms": ["potion"]
+  },
+  {
+    "component_name": "potion-03",
+    "visual_features": "药水（变体3）",
+    "core_semantic": "药水",
+    "use_cases": ["魔法药剂"],
+    "synonyms": ["potion"]
+  },
+  {
+    "component_name": "potion",
+    "visual_features": "药水瓶",
+    "core_semantic": "药水",
+    "use_cases": ["恢复", "增益"],
+    "synonyms": ["potion"]
+  },
+  {
+    "component_name": "rice",
+    "visual_features": "米饭",
+    "core_semantic": "米饭",
+    "use_cases": ["主食", "食物"],
+    "synonyms": ["rice"]
+  },
+  {
+    "component_name": "spoon",
+    "visual_features": "勺子",
+    "core_semantic": "勺子",
+    "use_cases": ["餐具"],
+    "synonyms": ["spoon"]
+  },
+  {
+    "component_name": "tableware",
+    "visual_features": "餐具组合（刀叉勺）",
+    "core_semantic": "餐具",
+    "use_cases": ["餐桌设置"],
+    "synonyms": ["tableware"]
+  },
+  {
+    "component_name": "wineglass-02",
+    "visual_features": "酒杯（变体）",
+    "core_semantic": "红酒杯",
+    "use_cases": ["酒类", "餐饮"],
+    "synonyms": ["wineglass"]
+  },
+  {
+    "component_name": "wineglass-03",
+    "visual_features": "酒杯（变体3）",
+    "core_semantic": "酒杯",
+    "use_cases": ["酒类"],
+    "synonyms": ["wineglass"]
+  },
+  {
+    "component_name": "wineglass",
+    "visual_features": "高脚酒杯",
+    "core_semantic": "红酒杯",
+    "use_cases": ["品酒", "餐饮"],
+    "synonyms": ["wineglass"]
+  },
+  {
+    "component_name": "zongzi",
+    "visual_features": "粽子",
+    "core_semantic": "粽子/端午节",
+    "use_cases": ["传统食物", "节日"],
+    "synonyms": ["zongzi", "粽子"]
+  },
+
+  // ==================== 6-buildings ====================
+  {
+    "component_name": "air-conditioner",
+    "visual_features": "空调室内机",
+    "core_semantic": "空调",
+    "use_cases": ["温度调节", "室内设施"],
+    "synonyms": ["AC", "空调"]
+  },
+  {
+    "component_name": "anvil",
+    "visual_features": "铁砧",
+    "core_semantic": "铁砧/锻造台",
+    "use_cases": ["锻造", "修理"],
+    "synonyms": ["anvil"]
+  },
+  {
+    "component_name": "bank",
+    "visual_features": "银行建筑",
+    "core_semantic": "银行",
+    "use_cases": ["金融", "存钱"],
+    "synonyms": ["bank"]
+  },
+  {
+    "component_name": "bed",
+    "visual_features": "床",
+    "core_semantic": "床",
+    "use_cases": ["休息", "存档"],
+    "synonyms": ["bed"]
+  },
+  {
+    "component_name": "bedside-table",
+    "visual_features": "床头柜",
+    "core_semantic": "床头柜",
+    "use_cases": ["家具"],
+    "synonyms": ["bedside table"]
+  },
+  {
+    "component_name": "bridge",
+    "visual_features": "桥",
+    "core_semantic": "桥梁",
+    "use_cases": ["交通", "建筑"],
+    "synonyms": ["bridge"]
+  },
+  {
+    "component_name": "chair-02",
+    "visual_features": "椅子（变体）",
+    "core_semantic": "椅子",
+    "use_cases": ["家具"],
+    "synonyms": ["chair"]
+  },
+  {
+    "component_name": "chair",
+    "visual_features": "椅子",
+    "core_semantic": "椅子",
+    "use_cases": ["家具"],
+    "synonyms": ["chair"]
+  },
+  {
+    "component_name": "classic-tv",
+    "visual_features": "老式电视",
+    "core_semantic": "电视机",
+    "use_cases": ["电器", "娱乐"],
+    "synonyms": ["TV"]
+  },
+  {
+    "component_name": "crystal-ball",
+    "visual_features": "水晶球",
+    "core_semantic": "水晶球/占卜",
+    "use_cases": ["魔法", "预言"],
+    "synonyms": ["crystal ball"]
+  },
+  {
+    "component_name": "door-02",
+    "visual_features": "门（变体）",
+    "core_semantic": "门",
+    "use_cases": ["入口"],
+    "synonyms": ["door"]
+  },
+  {
+    "component_name": "door-03",
+    "visual_features": "门（变体3）",
+    "core_semantic": "门",
+    "use_cases": ["入口"],
+    "synonyms": ["door"]
+  },
+  {
+    "component_name": "door",
+    "visual_features": "门",
+    "core_semantic": "门",
+    "use_cases": ["出入口"],
+    "synonyms": ["door"]
+  },
+  {
+    "component_name": "flag-02",
+    "visual_features": "旗帜（变体）",
+    "core_semantic": "旗帜",
+    "use_cases": ["标记", "国家"],
+    "synonyms": ["flag"]
+  },
+  {
+    "component_name": "flag-03",
+    "visual_features": "旗帜（变体3）",
+    "core_semantic": "旗帜",
+    "use_cases": ["标记"],
+    "synonyms": ["flag"]
+  },
+  {
+    "component_name": "flag",
+    "visual_features": "旗帜",
+    "core_semantic": "旗帜",
+    "use_cases": ["标记", "代表"],
+    "synonyms": ["flag"]
+  },
+  {
+    "component_name": "flowerpot-02",
+    "visual_features": "花盆（变体）",
+    "core_semantic": "花盆",
+    "use_cases": ["装饰", "植物"],
+    "synonyms": ["flowerpot"]
+  },
+  {
+    "component_name": "flowerpot",
+    "visual_features": "花盆",
+    "core_semantic": "花盆",
+    "use_cases": ["室内植物"],
+    "synonyms": ["flowerpot"]
+  },
+  {
+    "component_name": "fridge",
+    "visual_features": "冰箱",
+    "core_semantic": "冰箱",
+    "use_cases": ["电器", "食物保存"],
+    "synonyms": ["fridge"]
+  },
+  {
+    "component_name": "gravestone",
+    "visual_features": "墓碑",
+    "core_semantic": "墓碑/坟墓",
+    "use_cases": ["死亡", "墓地"],
+    "synonyms": ["gravestone"]
+  },
+  {
+    "component_name": "house-02",
+    "visual_features": "房子（变体）",
+    "core_semantic": "房屋",
+    "use_cases": ["建筑", "家园"],
+    "synonyms": ["house"]
+  },
+  {
+    "component_name": "house-03",
+    "visual_features": "房子（变体3）",
+    "core_semantic": "房屋",
+    "use_cases": ["建筑"],
+    "synonyms": ["house"]
+  },
+  {
+    "component_name": "house-04",
+    "visual_features": "房子（变体4）",
+    "core_semantic": "房屋",
+    "use_cases": ["建筑"],
+    "synonyms": ["house"]
+  },
+  {
+    "component_name": "house",
+    "visual_features": "房屋",
+    "core_semantic": "房子",
+    "use_cases": ["主页", "房产"],
+    "synonyms": ["house", "home"]
+  },
+  {
+    "component_name": "kettle",
+    "visual_features": "水壶",
+    "core_semantic": "水壶/烧水",
+    "use_cases": ["厨房", "热水"],
+    "synonyms": ["kettle"]
+  },
+  {
+    "component_name": "lantern-02",
+    "visual_features": "灯笼（变体）",
+    "core_semantic": "灯笼",
+    "use_cases": ["照明", "节日"],
+    "synonyms": ["lantern"]
+  },
+  {
+    "component_name": "lantern-03",
+    "visual_features": "灯笼（变体3）",
+    "core_semantic": "灯笼",
+    "use_cases": ["照明"],
+    "synonyms": ["lantern"]
+  },
+  {
+    "component_name": "lantern-04",
+    "visual_features": "灯笼（变体4）",
+    "core_semantic": "灯笼",
+    "use_cases": ["照明"],
+    "synonyms": ["lantern"]
+  },
+  {
+    "component_name": "lantern-05",
+    "visual_features": "灯笼（变体5）",
+    "core_semantic": "灯笼",
+    "use_cases": ["照明"],
+    "synonyms": ["lantern"]
+  },
+  {
+    "component_name": "lantern",
+    "visual_features": "灯笼",
+    "core_semantic": "灯笼",
+    "use_cases": ["照明", "传统"],
+    "synonyms": ["lantern"]
+  },
+  {
+    "component_name": "mirror",
+    "visual_features": "镜子",
+    "core_semantic": "镜子",
+    "use_cases": ["反射", "装饰"],
+    "synonyms": ["mirror"]
+  },
+  {
+    "component_name": "open-the-door",
+    "visual_features": "开门/入口",
+    "core_semantic": "开门/进入",
+    "use_cases": ["登录", "进入房间"],
+    "synonyms": ["open door"]
+  },
+  {
+    "component_name": "rice-cooker",
+    "visual_features": "电饭煲",
+    "core_semantic": "电饭煲",
+    "use_cases": ["厨房电器"],
+    "synonyms": ["rice cooker"]
+  },
+  {
+    "component_name": "shop",
+    "visual_features": "商店",
+    "core_semantic": "商店/店铺",
+    "use_cases": ["购物", "商业"],
+    "synonyms": ["shop"]
+  },
+  {
+    "component_name": "sign-02",
+    "visual_features": "指示牌（变体）",
+    "core_semantic": "牌子",
+    "use_cases": ["指引", "公告"],
+    "synonyms": ["sign"]
+  },
+  {
+    "component_name": "sign",
+    "visual_features": "指示牌",
+    "core_semantic": "标志牌",
+    "use_cases": ["指引"],
+    "synonyms": ["sign"]
+  },
+  {
+    "component_name": "table-02",
+    "visual_features": "桌子（变体）",
+    "core_semantic": "桌子",
+    "use_cases": ["家具"],
+    "synonyms": ["table"]
+  },
+  {
+    "component_name": "table",
+    "visual_features": "桌子",
+    "core_semantic": "桌子",
+    "use_cases": ["家具"],
+    "synonyms": ["table"]
+  },
+  {
+    "component_name": "target-02",
+    "visual_features": "靶子（变体）",
+    "core_semantic": "目标/靶",
+    "use_cases": ["射击", "目标"],
+    "synonyms": ["target"]
+  },
+  {
+    "component_name": "target",
+    "visual_features": "靶子",
+    "core_semantic": "靶心",
+    "use_cases": ["射击", "焦点"],
+    "synonyms": ["target"]
+  },
+  {
+    "component_name": "tent",
+    "visual_features": "帐篷",
+    "core_semantic": "帐篷",
+    "use_cases": ["露营", "临时住所"],
+    "synonyms": ["tent"]
+  },
+  {
+    "component_name": "toilet",
+    "visual_features": "马桶",
+    "core_semantic": "厕所",
+    "use_cases": ["卫生间"],
+    "synonyms": ["toilet"]
+  },
+  {
+    "component_name": "torch",
+    "visual_features": "火把",
+    "core_semantic": "火炬",
+    "use_cases": ["照明", "冒险"],
+    "synonyms": ["torch"]
+  },
+  {
+    "component_name": "tower-02",
+    "visual_features": "塔（变体）",
+    "core_semantic": "高塔",
+    "use_cases": ["建筑", "防御"],
+    "synonyms": ["tower"]
+  },
+  {
+    "component_name": "tower-03",
+    "visual_features": "塔（变体3）",
+    "core_semantic": "塔",
+    "use_cases": ["建筑"],
+    "synonyms": ["tower"]
+  },
+  {
+    "component_name": "tower-04",
+    "visual_features": "塔（变体4）",
+    "core_semantic": "塔",
+    "use_cases": ["建筑"],
+    "synonyms": ["tower"]
+  },
+  {
+    "component_name": "tower-05",
+    "visual_features": "塔（变体5）",
+    "core_semantic": "塔",
+    "use_cases": ["建筑"],
+    "synonyms": ["tower"]
+  },
+  {
+    "component_name": "tower-06",
+    "visual_features": "塔（变体6）",
+    "core_semantic": "塔",
+    "use_cases": ["建筑"],
+    "synonyms": ["tower"]
+  },
+  {
+    "component_name": "tower",
+    "visual_features": "塔",
+    "core_semantic": "塔楼",
+    "use_cases": ["城堡", "地标"],
+    "synonyms": ["tower"]
+  },
+  {
+    "component_name": "town",
+    "visual_features": "城镇",
+    "core_semantic": "小镇",
+    "use_cases": ["地图", "位置"],
+    "synonyms": ["town"]
+  },
+  {
+    "component_name": "village",
+    "visual_features": "村庄",
+    "core_semantic": "村庄",
+    "use_cases": ["乡村", "地图"],
+    "synonyms": ["village"]
+  },
+  {
+    "component_name": "wardrobe",
+    "visual_features": "衣柜",
+    "core_semantic": "衣柜",
+    "use_cases": ["存储", "更衣"],
+    "synonyms": ["wardrobe"]
+  },
+  {
+    "component_name": "washing-machine",
+    "visual_features": "洗衣机",
+    "core_semantic": "洗衣机",
+    "use_cases": ["电器", "清洗"],
+    "synonyms": ["washing machine"]
+  },
+
+  // ==================== 7-vehicles ====================
+  {
+    "component_name": "anchor",
+    "visual_features": "船锚",
+    "core_semantic": "锚/停泊",
+    "use_cases": ["船舶", "航海"],
+    "synonyms": ["anchor"]
+  },
+  {
+    "component_name": "battery-warning",
+    "visual_features": "电池警告灯",
+    "core_semantic": "电池警告",
+    "use_cases": ["车辆", "低电量"],
+    "synonyms": ["battery warning"]
+  },
+  {
+    "component_name": "bike",
+    "visual_features": "自行车",
+    "core_semantic": "自行车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["bike"]
+  },
+  {
+    "component_name": "boat-02",
+    "visual_features": "船（变体）",
+    "core_semantic": "小船",
+    "use_cases": ["水上交通"],
+    "synonyms": ["boat"]
+  },
+  {
+    "component_name": "boat",
+    "visual_features": "船",
+    "core_semantic": "船",
+    "use_cases": ["水上交通"],
+    "synonyms": ["boat"]
+  },
+  {
+    "component_name": "brake-system-warning",
+    "visual_features": "刹车系统警告",
+    "core_semantic": "刹车警告",
+    "use_cases": ["车辆安全"],
+    "synonyms": ["brake warning"]
+  },
+  {
+    "component_name": "bus-side",
+    "visual_features": "巴士侧面",
+    "core_semantic": "公共汽车",
+    "use_cases": ["公共交通"],
+    "synonyms": ["bus"]
+  },
+  {
+    "component_name": "bus",
+    "visual_features": "巴士正面",
+    "core_semantic": "巴士",
+    "use_cases": ["公共交通"],
+    "synonyms": ["bus"]
+  },
+  {
+    "component_name": "car-door",
+    "visual_features": "车门",
+    "core_semantic": "车门",
+    "use_cases": ["车辆部件"],
+    "synonyms": ["car door"]
+  },
+  {
+    "component_name": "check-engine",
+    "visual_features": "检查发动机警告",
+    "core_semantic": "发动机故障",
+    "use_cases": ["车辆警告"],
+    "synonyms": ["check engine"]
+  },
+  {
+    "component_name": "classic-car-side",
+    "visual_features": "经典汽车侧面",
+    "core_semantic": "老式车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["classic car"]
+  },
+  {
+    "component_name": "classic-car",
+    "visual_features": "经典汽车正面",
+    "core_semantic": "老爷车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["classic car"]
+  },
+  {
+    "component_name": "coolant-temperature-warning",
+    "visual_features": "冷却液温度警告",
+    "core_semantic": "水温过高",
+    "use_cases": ["车辆警告"],
+    "synonyms": ["coolant temp"]
+  },
+  {
+    "component_name": "door-ajar",
+    "visual_features": "车门未关",
+    "core_semantic": "门未关好",
+    "use_cases": ["车辆提示"],
+    "synonyms": ["door ajar"]
+  },
+  {
+    "component_name": "formula-racing-side",
+    "visual_features": "方程式赛车侧面",
+    "core_semantic": "F1赛车",
+    "use_cases": ["赛车"],
+    "synonyms": ["formula racing"]
+  },
+  {
+    "component_name": "formula-racing",
+    "visual_features": "方程式赛车正面",
+    "core_semantic": "方程式赛车",
+    "use_cases": ["赛车"],
+    "synonyms": ["formula racing"]
+  },
+  {
+    "component_name": "front-fog-light",
+    "visual_features": "前雾灯",
+    "core_semantic": "雾灯",
+    "use_cases": ["车灯"],
+    "synonyms": ["fog light"]
+  },
+  {
+    "component_name": "hazard-lights",
+    "visual_features": "双闪灯",
+    "core_semantic": "危险警示灯",
+    "use_cases": ["车辆紧急"],
+    "synonyms": ["hazard lights"]
+  },
+  {
+    "component_name": "helm",
+    "visual_features": "舵轮",
+    "core_semantic": "船舵/方向盘",
+    "use_cases": ["航海", "操控"],
+    "synonyms": ["helm"]
+  },
+  {
+    "component_name": "high-beam",
+    "visual_features": "远光灯",
+    "core_semantic": "远光",
+    "use_cases": ["车灯"],
+    "synonyms": ["high beam"]
+  },
+  {
+    "component_name": "highway",
+    "visual_features": "高速公路",
+    "core_semantic": "公路",
+    "use_cases": ["道路", "导航"],
+    "synonyms": ["highway"]
+  },
+  {
+    "component_name": "low-beam",
+    "visual_features": "近光灯",
+    "core_semantic": "近光",
+    "use_cases": ["车灯"],
+    "synonyms": ["low beam"]
+  },
+  {
+    "component_name": "low-fuel",
+    "visual_features": "低油量警告",
+    "core_semantic": "燃油不足",
+    "use_cases": ["车辆提示"],
+    "synonyms": ["low fuel"]
+  },
+  {
+    "component_name": "motorcycle-side",
+    "visual_features": "摩托车侧面",
+    "core_semantic": "摩托车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["motorcycle"]
+  },
+  {
+    "component_name": "motorcycle",
+    "visual_features": "摩托车正面",
+    "core_semantic": "摩托车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["motorcycle"]
+  },
+  {
+    "component_name": "no-entry",
+    "visual_features": "禁止驶入",
+    "core_semantic": "禁止进入",
+    "use_cases": ["交通标志"],
+    "synonyms": ["no entry"]
+  },
+  {
+    "component_name": "no-stopping",
+    "visual_features": "禁止停车",
+    "core_semantic": "禁停",
+    "use_cases": ["交通标志"],
+    "synonyms": ["no stopping"]
+  },
+  {
+    "component_name": "oil-pressure-warning",
+    "visual_features": "机油压力警告",
+    "core_semantic": "机油压力低",
+    "use_cases": ["车辆警告"],
+    "synonyms": ["oil pressure"]
+  },
+  {
+    "component_name": "parking-brake",
+    "visual_features": "手刹指示",
+    "core_semantic": "驻车制动",
+    "use_cases": ["车辆状态"],
+    "synonyms": ["parking brake"]
+  },
+  {
+    "component_name": "parking",
+    "visual_features": "停车标志",
+    "core_semantic": "停车",
+    "use_cases": ["交通", "停车场"],
+    "synonyms": ["parking"]
+  },
+  {
+    "component_name": "petroleum",
+    "visual_features": "加油机",
+    "core_semantic": "汽油/加油站",
+    "use_cases": ["燃油", "补给"],
+    "synonyms": ["petroleum"]
+  },
+  {
+    "component_name": "plane-side-02",
+    "visual_features": "飞机侧面变体",
+    "core_semantic": "飞机",
+    "use_cases": ["航空"],
+    "synonyms": ["plane"]
+  },
+  {
+    "component_name": "plane-side-03",
+    "visual_features": "飞机侧面变体3",
+    "core_semantic": "飞机",
+    "use_cases": ["航空"],
+    "synonyms": ["plane"]
+  },
+  {
+    "component_name": "plane-side",
+    "visual_features": "飞机侧面",
+    "core_semantic": "客机",
+    "use_cases": ["航空旅行"],
+    "synonyms": ["plane"]
+  },
+  {
+    "component_name": "plane",
+    "visual_features": "飞机正面",
+    "core_semantic": "飞机",
+    "use_cases": ["航空"],
+    "synonyms": ["plane"]
+  },
+  {
+    "component_name": "propeller-02",
+    "visual_features": "螺旋桨变体",
+    "core_semantic": "螺旋桨",
+    "use_cases": ["飞机部件"],
+    "synonyms": ["propeller"]
+  },
+  {
+    "component_name": "propeller",
+    "visual_features": "螺旋桨",
+    "core_semantic": "螺旋桨",
+    "use_cases": ["飞机", "船舶"],
+    "synonyms": ["propeller"]
+  },
+  {
+    "component_name": "rear-fog-light",
+    "visual_features": "后雾灯",
+    "core_semantic": "后雾灯",
+    "use_cases": ["车灯"],
+    "synonyms": ["rear fog light"]
+  },
+  {
+    "component_name": "rocket",
+    "visual_features": "火箭",
+    "core_semantic": "火箭/发射",
+    "use_cases": ["航天", "加速"],
+    "synonyms": ["rocket"]
+  },
+  {
+    "component_name": "sedan-car-side",
+    "visual_features": "轿车侧面",
+    "core_semantic": "轿车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["sedan"]
+  },
+  {
+    "component_name": "sedan-car",
+    "visual_features": "轿车正面",
+    "core_semantic": "轿车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["sedan"]
+  },
+  {
+    "component_name": "side-lights",
+    "visual_features": "示宽灯",
+    "core_semantic": "侧灯",
+    "use_cases": ["车灯"],
+    "synonyms": ["side lights"]
+  },
+  {
+    "component_name": "sports-car-side",
+    "visual_features": "跑车侧面",
+    "core_semantic": "跑车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["sports car"]
+  },
+  {
+    "component_name": "sports-car",
+    "visual_features": "跑车正面",
+    "core_semantic": "跑车",
+    "use_cases": ["交通工具"],
+    "synonyms": ["sports car"]
+  },
+  {
+    "component_name": "steering-wheel-02",
+    "visual_features": "方向盘变体",
+    "core_semantic": "方向盘",
+    "use_cases": ["车辆控制"],
+    "synonyms": ["steering wheel"]
+  },
+  {
+    "component_name": "steering-wheel-03",
+    "visual_features": "方向盘变体3",
+    "core_semantic": "方向盘",
+    "use_cases": ["控制"],
+    "synonyms": ["steering wheel"]
+  },
+  {
+    "component_name": "steering-wheel",
+    "visual_features": "方向盘",
+    "core_semantic": "方向盘",
+    "use_cases": ["驾驶"],
+    "synonyms": ["steering wheel"]
+  },
+  {
+    "component_name": "truck-side-02",
+    "visual_features": "卡车侧面变体",
+    "core_semantic": "卡车",
+    "use_cases": ["运输"],
+    "synonyms": ["truck"]
+  },
+  {
+    "component_name": "truck-side",
+    "visual_features": "卡车侧面",
+    "core_semantic": "货车",
+    "use_cases": ["运输"],
+    "synonyms": ["truck"]
+  },
+  {
+    "component_name": "truck",
+    "visual_features": "卡车正面",
+    "core_semantic": "卡车",
+    "use_cases": ["运输"],
+    "synonyms": ["truck"]
+  },
+  {
+    "component_name": "turn-signal",
+    "visual_features": "转向灯",
+    "core_semantic": "转向指示",
+    "use_cases": ["车辆信号"],
+    "synonyms": ["turn signal"]
+  },
+  {
+    "component_name": "tyre-02",
+    "visual_features": "轮胎变体",
+    "core_semantic": "轮胎",
+    "use_cases": ["车轮"],
+    "synonyms": ["tyre"]
+  },
+  {
+    "component_name": "tyre-03",
+    "visual_features": "轮胎变体3",
+    "core_semantic": "轮胎",
+    "use_cases": ["车轮"],
+    "synonyms": ["tyre"]
+  },
+  {
+    "component_name": "tyre-04",
+    "visual_features": "轮胎变体4",
+    "core_semantic": "轮胎",
+    "use_cases": ["车轮"],
+    "synonyms": ["tyre"]
+  },
+  {
+    "component_name": "tyre-05",
+    "visual_features": "轮胎变体5",
+    "core_semantic": "轮胎",
+    "use_cases": ["车轮"],
+    "synonyms": ["tyre"]
+  },
+  {
+    "component_name": "tyre",
+    "visual_features": "轮胎",
+    "core_semantic": "轮胎",
+    "use_cases": ["车轮"],
+    "synonyms": ["tyre"]
+  },
+  {
+    "component_name": "wheel",
+    "visual_features": "车轮",
+    "core_semantic": "轮子",
+    "use_cases": ["车辆部件", "机械"],
+    "synonyms": ["wheel"]
+  },
+
+  // ==================== 8-ui ====================
+  {
+    "component_name": "adjustment",
+    "visual_features": "两根线 + 两个高度不同的长方形",
+    "core_semantic": "调节/滑动条",
+    "use_cases": ["参数调整", "亮度/音量控制"],
+    "synonyms": ["adjustment", "滑块"]
+  },
+  // 箭头系列：基础圆润，02 较尖，03 V 形无垂直线
+  {
+    "component_name": "arrow-down-02",
+    "visual_features": "向下的尖锐箭头",
+    "core_semantic": "向下箭头（尖）",
+    "use_cases": ["下拉菜单", "降序"],
+    "synonyms": ["arrow down", "下箭头"]
+  },
+  {
+    "component_name": "arrow-down-03",
+    "visual_features": "向下的 V 形无垂直线",
+    "core_semantic": "向下指示（V形）",
+    "use_cases": ["展开", "下拉"],
+    "synonyms": ["arrow down"]
+  },
+  {
+    "component_name": "arrow-down-left-02",
+    "visual_features": "尖锐左下箭头",
+    "core_semantic": "左下方向（尖）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow down left"]
+  },
+  {
+    "component_name": "arrow-down-left-03",
+    "visual_features": "V 形左下无垂直线",
+    "core_semantic": "左下方向（V形）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow down left"]
+  },
+  {
+    "component_name": "arrow-down-left",
+    "visual_features": "圆润左下箭头",
+    "core_semantic": "左下方向（基础）",
+    "use_cases": ["方向指示"],
+    "synonyms": ["arrow down left"]
+  },
+  {
+    "component_name": "arrow-down-right-02",
+    "visual_features": "尖锐右下箭头",
+    "core_semantic": "右下方向（尖）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow down right"]
+  },
+  {
+    "component_name": "arrow-down-right-03",
+    "visual_features": "V 形右下无垂直线",
+    "core_semantic": "右下方向（V形）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow down right"]
+  },
+  {
+    "component_name": "arrow-down-right",
+    "visual_features": "圆润右下箭头",
+    "core_semantic": "右下方向（基础）",
+    "use_cases": ["方向指示"],
+    "synonyms": ["arrow down right"]
+  },
+  {
+    "component_name": "arrow-down",
+    "visual_features": "圆润向下箭头",
+    "core_semantic": "向下指示（基础）",
+    "use_cases": ["展开", "下降"],
+    "synonyms": ["arrow down"]
+  },
+  {
+    "component_name": "arrow-left-02",
+    "visual_features": "尖锐左箭头",
+    "core_semantic": "左箭头（尖）",
+    "use_cases": ["返回", "后退"],
+    "synonyms": ["arrow left"]
+  },
+  {
+    "component_name": "arrow-left-03",
+    "visual_features": "V 形左无垂直线",
+    "core_semantic": "左方向（V形）",
+    "use_cases": ["向左"],
+    "synonyms": ["arrow left"]
+  },
+  {
+    "component_name": "arrow-left",
+    "visual_features": "圆润左箭头",
+    "core_semantic": "向左（基础）",
+    "use_cases": ["后退", "左移"],
+    "synonyms": ["arrow left"]
+  },
+  {
+    "component_name": "arrow-right-02",
+    "visual_features": "尖锐右箭头",
+    "core_semantic": "右箭头（尖）",
+    "use_cases": ["前进", "下一步"],
+    "synonyms": ["arrow right"]
+  },
+  {
+    "component_name": "arrow-right-03",
+    "visual_features": "V 形右无垂直线",
+    "core_semantic": "右方向（V形）",
+    "use_cases": ["向右"],
+    "synonyms": ["arrow right"]
+  },
+  {
+    "component_name": "arrow-right",
+    "visual_features": "圆润右箭头",
+    "core_semantic": "向右（基础）",
+    "use_cases": ["前进", "右移"],
+    "synonyms": ["arrow right"]
+  },
+  {
+    "component_name": "arrow-up-02",
+    "visual_features": "尖锐上箭头",
+    "core_semantic": "上箭头（尖）",
+    "use_cases": ["升级", "上升"],
+    "synonyms": ["arrow up"]
+  },
+  {
+    "component_name": "arrow-up-03",
+    "visual_features": "V 形上无垂直线",
+    "core_semantic": "向上（V形）",
+    "use_cases": ["上升"],
+    "synonyms": ["arrow up"]
+  },
+  {
+    "component_name": "arrow-up-left-02",
+    "visual_features": "尖锐左上箭头",
+    "core_semantic": "左上方向（尖）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow up left"]
+  },
+  {
+    "component_name": "arrow-up-left-03",
+    "visual_features": "V 形左上无垂直线",
+    "core_semantic": "左上方向（V形）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow up left"]
+  },
+  {
+    "component_name": "arrow-up-left",
+    "visual_features": "圆润左上箭头",
+    "core_semantic": "左上方向（基础）",
+    "use_cases": ["方向指示"],
+    "synonyms": ["arrow up left"]
+  },
+  {
+    "component_name": "arrow-up-right-02",
+    "visual_features": "尖锐右上箭头",
+    "core_semantic": "右上方向（尖）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow up right"]
+  },
+  {
+    "component_name": "arrow-up-right-03",
+    "visual_features": "V 形右上无垂直线",
+    "core_semantic": "右上方向（V形）",
+    "use_cases": ["方向"],
+    "synonyms": ["arrow up right"]
+  },
+  {
+    "component_name": "arrow-up-right",
+    "visual_features": "圆润右上箭头",
+    "core_semantic": "右上方向（基础）",
+    "use_cases": ["方向指示"],
+    "synonyms": ["arrow up right"]
+  },
+  {
+    "component_name": "arrow-up",
+    "visual_features": "圆润向上箭头",
+    "core_semantic": "向上（基础）",
+    "use_cases": ["上升", "回到顶部"],
+    "synonyms": ["arrow up"]
+  },
+  {
+    "component_name": "change",
+    "visual_features": "两个箭头首尾相接形成循环",
+    "core_semantic": "交换/切换",
+    "use_cases": ["数据同步", "替换"],
+    "synonyms": ["change", "swap"]
+  },
+  {
+    "component_name": "circle-ring",
+    "visual_features": "粗线圆环（空心）",
+    "core_semantic": "圆环/未选中状态",
+    "use_cases": ["单选按钮", "进度环"],
+    "synonyms": ["circle ring", "圆环"]
+  },
+  {
+    "component_name": "cross",
+    "visual_features": "X 形叉号",
+    "core_semantic": "关闭/删除",
+    "use_cases": ["关闭窗口", "取消"],
+    "synonyms": ["cross", "X", "close"]
+  },
+  {
+    "component_name": "dark-mode-02",
+    "visual_features": "月亮",
+    "core_semantic": "暗色模式（月亮）",
+    "use_cases": ["夜间模式"],
+    "synonyms": ["dark mode", "night mode"]
+  },
+  {
+    "component_name": "dark-mode",
+    "visual_features": "圆形，左边实心右边空",
+    "core_semantic": "暗色模式（半圆）",
+    "use_cases": ["夜间模式切换"],
+    "synonyms": ["dark mode"]
+  },
+  {
+    "component_name": "exclamation-02",
+    "visual_features": "三角形内含感叹号",
+    "core_semantic": "警告（三角）",
+    "use_cases": ["危险提示", "重要警告"],
+    "synonyms": ["exclamation", "warning"]
+  },
+  {
+    "component_name": "exclamation-double",
+    "visual_features": "双感叹号 ‼",
+    "core_semantic": "双重强调/严重警告",
+    "use_cases": ["非常严重警告"],
+    "synonyms": ["exclamation double"]
+  },
+  {
+    "component_name": "exclamation",
+    "visual_features": "单独感叹号 !",
+    "core_semantic": "感叹号（基础）",
+    "use_cases": ["注意", "信息提示"],
+    "synonyms": ["exclamation"]
+  },
+  {
+    "component_name": "expand-02",
+    "visual_features": "两个箭头分别指向右上和左下",
+    "core_semantic": "展开/缩放（双向）",
+    "use_cases": ["全屏", "放大"],
+    "synonyms": ["expand"]
+  },
+  {
+    "component_name": "expand-03",
+    "visual_features": "虚线正方形框",
+    "core_semantic": "选择区域/裁剪框",
+    "use_cases": ["截图", "选区"],
+    "synonyms": ["expand", "选择框"]
+  },
+  {
+    "component_name": "expand-04",
+    "visual_features": "左下 L 形线 + 右上倒 L 形",
+    "core_semantic": "缩放角标",
+    "use_cases": ["缩放", "拉伸窗口角"],
+    "synonyms": ["expand", "角标"]
+  },
+  {
+    "component_name": "expand",
+    "visual_features": "四个方向向外箭头",
+    "core_semantic": "展开/最大化",
+    "use_cases": ["全屏", "放大视图"],
+    "synonyms": ["expand", "maximize"]
+  },
+  {
+    "component_name": "friends",
+    "visual_features": "两个人形剪影并排重叠",
+    "core_semantic": "好友/联系人",
+    "use_cases": ["社交", "团队"],
+    "synonyms": ["friends", "people"]
+  },
+  {
+    "component_name": "grid-02",
+    "visual_features": "网格变体（如点阵或长方形格）",
+    "core_semantic": "栅格视图",
+    "use_cases": ["布局切换"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "grid-03",
+    "visual_features": "网格变体3",
+    "core_semantic": "网格",
+    "use_cases": ["视图模式"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "grid-04",
+    "visual_features": "网格变体4",
+    "core_semantic": "网格",
+    "use_cases": ["视图模式"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "grid-05",
+    "visual_features": "网格变体5",
+    "core_semantic": "网格",
+    "use_cases": ["视图模式"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "grid-06",
+    "visual_features": "网格变体6",
+    "core_semantic": "网格",
+    "use_cases": ["视图模式"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "grid-07",
+    "visual_features": "网格变体7",
+    "core_semantic": "网格",
+    "use_cases": ["视图模式"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "grid-add",
+    "visual_features": "带加号的网格",
+    "core_semantic": "新增网格/添加项目",
+    "use_cases": ["添加组件"],
+    "synonyms": ["grid add"]
+  },
+  {
+    "component_name": "grid",
+    "visual_features": "基本九宫格/网格",
+    "core_semantic": "网格视图",
+    "use_cases": ["仪表盘", "布局"],
+    "synonyms": ["grid"]
+  },
+  {
+    "component_name": "info-02",
+    "visual_features": "空心圆圈内含 i",
+    "core_semantic": "信息提示（圆圈）",
+    "use_cases": ["帮助", "详情"],
+    "synonyms": ["info"]
+  },
+  {
+    "component_name": "info",
+    "visual_features": "独立加粗字母 i（无圆圈）",
+    "core_semantic": "信息（基础）",
+    "use_cases": ["提示", "信息"],
+    "synonyms": ["info"]
+  },
+  {
+    "component_name": "invisible",
+    "visual_features": "眼睛上有一条斜线",
+    "core_semantic": "不可见/隐藏",
+    "use_cases": ["密码隐藏", "隐身模式"],
+    "synonyms": ["invisible", "hidden"]
+  },
+  {
+    "component_name": "light-mode-02",
+    "visual_features": "带光芒线条的太阳",
+    "core_semantic": "亮色模式（太阳）",
+    "use_cases": ["日间模式"],
+    "synonyms": ["light mode"]
+  },
+  {
+    "component_name": "light-mode",
+    "visual_features": "圆形，左边空右边实心",
+    "core_semantic": "亮色模式（半圆）",
+    "use_cases": ["日间模式切换"],
+    "synonyms": ["light mode"]
+  },
+  {
+    "component_name": "lock",
+    "visual_features": "带圆形孔的挂锁",
+    "core_semantic": "锁定/安全",
+    "use_cases": ["加密", "权限"],
+    "synonyms": ["lock", "锁定"]
+  },
+  {
+    "component_name": "menu-02",
+    "visual_features": "菜单变体（如两点或不同宽度横线）",
+    "core_semantic": "汉堡菜单",
+    "use_cases": ["导航菜单"],
+    "synonyms": ["menu"]
+  },
+  {
+    "component_name": "menu-03",
+    "visual_features": "菜单变体3",
+    "core_semantic": "菜单",
+    "use_cases": ["导航"],
+    "synonyms": ["menu"]
+  },
+  {
+    "component_name": "menu-04",
+    "visual_features": "菜单变体4",
+    "core_semantic": "菜单",
+    "use_cases": ["导航"],
+    "synonyms": ["menu"]
+  },
+  {
+    "component_name": "menu-05",
+    "visual_features": "菜单变体5",
+    "core_semantic": "菜单",
+    "use_cases": ["导航"],
+    "synonyms": ["menu"]
+  },
+  {
+    "component_name": "menu-06",
+    "visual_features": "菜单变体6",
+    "core_semantic": "菜单",
+    "use_cases": ["导航"],
+    "synonyms": ["menu"]
+  },
+  {
+    "component_name": "menu-07",
+    "visual_features": "菜单变体7",
+    "core_semantic": "菜单",
+    "use_cases": ["导航"],
+    "synonyms": ["menu"]
+  },
+  {
+    "component_name": "menu-add",
+    "visual_features": "带加号的菜单",
+    "core_semantic": "新增菜单项",
+    "use_cases": ["添加导航"],
+    "synonyms": ["menu add"]
+  },
+  {
+    "component_name": "menu-open",
+    "visual_features": "展开的菜单图标",
+    "core_semantic": "打开菜单",
+    "use_cases": ["侧边栏展开"],
+    "synonyms": ["menu open"]
+  },
+  {
+    "component_name": "menu",
+    "visual_features": "标准汉堡菜单（三条横线）",
+    "core_semantic": "菜单",
+    "use_cases": ["主导航"],
+    "synonyms": ["menu", "hamburger"]
+  },
+  {
+    "component_name": "prohibited-02",
+    "visual_features": "实心禁止符号（带斜杠圆）",
+    "core_semantic": "禁止（实心）",
+    "use_cases": ["操作禁止"],
+    "synonyms": ["prohibited"]
+  },
+  {
+    "component_name": "prohibited",
+    "visual_features": "空心禁止符号（红圈+斜杠）",
+    "core_semantic": "禁止",
+    "use_cases": ["阻止操作"],
+    "synonyms": ["prohibited", "no"]
+  },
+  {
+    "component_name": "question-mark",
+    "visual_features": "独立问号 ?",
+    "core_semantic": "帮助/疑问",
+    "use_cases": ["帮助", "未知"],
+    "synonyms": ["question", "help"]
+  },
+  {
+    "component_name": "refresh",
+    "visual_features": "两个弯曲箭头首尾相接环形",
+    "core_semantic": "刷新/重载",
+    "use_cases": ["更新数据", "同步"],
+    "synonyms": ["refresh", "reload"]
+  },
+  {
+    "component_name": "rest",
+    "visual_features": "闭眼只有眉毛（休眠）",
+    "core_semantic": "休息/休眠",
+    "use_cases": ["暂停", "节能"],
+    "synonyms": ["rest", "sleep"]
+  },
+  {
+    "component_name": "restore-02",
+    "visual_features": "向内指向的两个箭头",
+    "core_semantic": "还原/退出全屏（向内）",
+    "use_cases": ["窗口恢复"],
+    "synonyms": ["restore"]
+  },
+  {
+    "component_name": "restore-03",
+    "visual_features": "四个角凹进去",
+    "core_semantic": "窗口还原（凹角）",
+    "use_cases": ["缩放窗口"],
+    "synonyms": ["restore"]
+  },
+  {
+    "component_name": "restore-04",
+    "visual_features": "左下角和右上角凹进去",
+    "core_semantic": "还原角标（双角）",
+    "use_cases": ["退出全屏角标"],
+    "synonyms": ["restore"]
+  },
+  {
+    "component_name": "restore",
+    "visual_features": "四个箭头往中间（与 expand 反向）",
+    "core_semantic": "还原/缩小",
+    "use_cases": ["退出全屏"],
+    "synonyms": ["restore", "minimize"]
+  },
+  {
+    "component_name": "rotate-left",
+    "visual_features": "椭圆逆时针弯曲箭头",
+    "core_semantic": "向左旋转",
+    "use_cases": ["图片旋转", "逆时针"],
+    "synonyms": ["rotate left"]
+  },
+  {
+    "component_name": "rotate-right",
+    "visual_features": "椭圆顺时针弯曲箭头",
+    "core_semantic": "向右旋转",
+    "use_cases": ["旋转", "顺时针"],
+    "synonyms": ["rotate right"]
+  },
+  {
+    "component_name": "save",
+    "visual_features": "软盘图标",
+    "core_semantic": "保存",
+    "use_cases": ["存储文件", "保存进度"],
+    "synonyms": ["save", "floppy"]
+  },
+  {
+    "component_name": "search",
+    "visual_features": "放大镜",
+    "core_semantic": "搜索",
+    "use_cases": ["查找", "检索"],
+    "synonyms": ["search", "magnifier"]
+  },
+  {
+    "component_name": "settings-02",
+    "visual_features": "圆润齿轮",
+    "core_semantic": "设置（圆润）",
+    "use_cases": ["偏好设置"],
+    "synonyms": ["settings", "gear"]
+  },
+  {
+    "component_name": "settings",
+    "visual_features": "尖锐棱角齿轮",
+    "core_semantic": "设置（基础）",
+    "use_cases": ["系统设置"],
+    "synonyms": ["settings", "gear"]
+  },
+  {
+    "component_name": "slider",
+    "visual_features": "水平线 + 椭圆手柄，已过部分实心",
+    "core_semantic": "滑动条/滑块",
+    "use_cases": ["调节数值", "音量控制"],
+    "synonyms": ["slider"]
+  },
+  {
+    "component_name": "sort-02",
+    "visual_features": "排序图标变体（上下箭头）",
+    "core_semantic": "排序",
+    "use_cases": ["列表排序"],
+    "synonyms": ["sort"]
+  },
+  {
+    "component_name": "sort",
+    "visual_features": "标准排序箭头",
+    "core_semantic": "排序",
+    "use_cases": ["升序/降序"],
+    "synonyms": ["sort"]
+  },
+  {
+    "component_name": "switch-02",
+    "visual_features": "开关变体",
+    "core_semantic": "切换开关",
+    "use_cases": ["开/关"],
+    "synonyms": ["switch"]
+  },
+  {
+    "component_name": "switch",
+    "visual_features": "开关",
+    "core_semantic": "切换",
+    "use_cases": ["启用/禁用"],
+    "synonyms": ["switch"]
+  },
+  {
+    "component_name": "tick",
+    "visual_features": "对勾 ✓",
+    "core_semantic": "正确/完成",
+    "use_cases": ["确认", "选中"],
+    "synonyms": ["tick", "check"]
+  },
+  {
+    "component_name": "toggle-off",
+    "visual_features": "关闭状态的拨动开关",
+    "core_semantic": "关闭",
+    "use_cases": ["开关置灰"],
+    "synonyms": ["toggle off"]
+  },
+  {
+    "component_name": "toggle-on",
+    "visual_features": "开启状态的拨动开关",
+    "core_semantic": "开启",
+    "use_cases": ["开关激活"],
+    "synonyms": ["toggle on"]
+  },
+  {
+    "component_name": "toggle",
+    "visual_features": "通用拨动开关",
+    "core_semantic": "切换",
+    "use_cases": ["开关"],
+    "synonyms": ["toggle"]
+  },
+  {
+    "component_name": "ui",
+    "visual_features": "UI 界面元素图标（如屏幕+控件）",
+    "core_semantic": "用户界面",
+    "use_cases": ["界面设计", "前端"],
+    "synonyms": ["UI"]
+  },
+  {
+    "component_name": "unlock",
+    "visual_features": "打开的锁",
+    "core_semantic": "解锁",
+    "use_cases": ["访问权限", "解密"],
+    "synonyms": ["unlock"]
+  },
+  {
+    "component_name": "user-add",
+    "visual_features": "用户+加号",
+    "core_semantic": "添加用户",
+    "use_cases": ["注册", "创建账户"],
+    "synonyms": ["user add"]
+  },
+  {
+    "component_name": "user-alert",
+    "visual_features": "用户+警告标志",
+    "core_semantic": "用户警告",
+    "use_cases": ["账号异常"],
+    "synonyms": ["user alert"]
+  },
+  {
+    "component_name": "user-avatar-02",
+    "visual_features": "用户头像变体（带边框或不同形状）",
+    "core_semantic": "个人头像",
+    "use_cases": ["个人资料"],
+    "synonyms": ["avatar"]
+  },
+  {
+    "component_name": "user-avatar",
+    "visual_features": "标准用户头像（圆形人像+背景）",
+    "core_semantic": "头像",
+    "use_cases": ["个人资料"],
+    "synonyms": ["avatar"]
+  },
+  {
+    "component_name": "user-check",
+    "visual_features": "用户+对勾",
+    "core_semantic": "用户验证/已确认",
+    "use_cases": ["身份认证"],
+    "synonyms": ["user check"]
+  },
+  {
+    "component_name": "user-delete",
+    "visual_features": "用户+删除符号",
+    "core_semantic": "删除用户",
+    "use_cases": ["移除账户"],
+    "synonyms": ["user delete"]
+  },
+  {
+    "component_name": "user-group",
+    "visual_features": "多人用户图标",
+    "core_semantic": "用户组/团队",
+    "use_cases": ["群组", "团队管理"],
+    "synonyms": ["user group"]
+  },
+  {
+    "component_name": "user-list",
+    "visual_features": "用户+列表",
+    "core_semantic": "用户列表",
+    "use_cases": ["成员目录"],
+    "synonyms": ["user list"]
+  },
+  {
+    "component_name": "user-remove",
+    "visual_features": "用户+减号或移除",
+    "core_semantic": "移除用户",
+    "use_cases": ["踢出成员"],
+    "synonyms": ["user remove"]
+  },
+  {
+    "component_name": "user",
+    "visual_features": "单独人形剪影",
+    "core_semantic": "用户/个人",
+    "use_cases": ["个人资料", "登录"],
+    "synonyms": ["user", "person"]
+  },
+  {
+    "component_name": "visible",
+    "visual_features": "睁开眼睛",
+    "core_semantic": "可见/显示",
+    "use_cases": ["显示密码", "查看"],
+    "synonyms": ["visible", "eye"]
+  },
+  {
+    "component_name": "zoom-in",
+    "visual_features": "放大镜+加号",
+    "core_semantic": "放大",
+    "use_cases": ["视图放大"],
+    "synonyms": ["zoom in"]
+  },
+  {
+    "component_name": "zoom-out",
+    "visual_features": "放大镜+减号",
+    "core_semantic": "缩小",
+    "use_cases": ["视图缩小"],
+    "synonyms": ["zoom out"]
+  },
+
+  // ==================== 9-media ====================
+  {
+    "component_name": "audio-waves",
+    "visual_features": "声波图形（多条竖线或波形）",
+    "core_semantic": "音频/声波",
+    "use_cases": ["声音录制", "语音"],
+    "synonyms": ["audio", "sound"]
+  },
+  {
+    "component_name": "battery-negative",
+    "visual_features": "电量低/电池带减号",
+    "core_semantic": "电量不足",
+    "use_cases": ["低电量警告"],
+    "synonyms": ["battery low"]
+  },
+  {
+    "component_name": "battery-positive",
+    "visual_features": "电量充足/电池带加号",
+    "core_semantic": "电量满",
+    "use_cases": ["电源状态"],
+    "synonyms": ["battery full"]
+  },
+  {
+    "component_name": "bookmark",
+    "visual_features": "书签/旗帜角标",
+    "core_semantic": "书签/收藏",
+    "use_cases": ["浏览器书签", "标记"],
+    "synonyms": ["bookmark"]
+  },
+  {
+    "component_name": "branch-02",
+    "visual_features": "分支图标变体",
+    "core_semantic": "分支/分叉",
+    "use_cases": ["版本控制"],
+    "synonyms": ["branch"]
+  },
+  {
+    "component_name": "branch",
+    "visual_features": "分支路线",
+    "core_semantic": "分支",
+    "use_cases": ["Git分支", "分叉"],
+    "synonyms": ["branch"]
+  },
+  {
+    "component_name": "bt",
+    "visual_features": "蓝牙符号",
+    "core_semantic": "蓝牙",
+    "use_cases": ["无线连接"],
+    "synonyms": ["bluetooth"]
+  },
+  {
+    "component_name": "bug",
+    "visual_features": "虫子/甲虫",
+    "core_semantic": "Bug/程序错误",
+    "use_cases": ["调试", "报告问题"],
+    "synonyms": ["bug", "debug"]
+  },
+  {
+    "component_name": "calendar",
+    "visual_features": "日历",
+    "core_semantic": "日历/日期",
+    "use_cases": ["日程", "时间管理"],
+    "synonyms": ["calendar"]
+  },
+  {
+    "component_name": "camera",
+    "visual_features": "相机",
+    "core_semantic": "相机/拍照",
+    "use_cases": ["摄影", "图像捕捉"],
+    "synonyms": ["camera"]
+  },
+  {
+    "component_name": "clapper",
+    "visual_features": "场记板",
+    "core_semantic": "拍板/电影",
+    "use_cases": ["视频制作", "影视"],
+    "synonyms": ["clapper", "slate"]
+  },
+  {
+    "component_name": "clock",
+    "visual_features": "时钟",
+    "core_semantic": "时间/时钟",
+    "use_cases": ["时间显示", "倒计时"],
+    "synonyms": ["clock", "time"]
+  },
+  {
+    "component_name": "cloud-download",
+    "visual_features": "云+向下箭头",
+    "core_semantic": "云下载",
+    "use_cases": ["从云端下载"],
+    "synonyms": ["cloud download"]
+  },
+  {
+    "component_name": "cloud-upload",
+    "visual_features": "云+向上箭头",
+    "core_semantic": "云上传",
+    "use_cases": ["上传到云端"],
+    "synonyms": ["cloud upload"]
+  },
+  {
+    "component_name": "code",
+    "visual_features": "代码符号 </>",
+    "core_semantic": "代码/编程",
+    "use_cases": ["开发者工具", "源代码"],
+    "synonyms": ["code", "coding"]
+  },
+  {
+    "component_name": "computer-mouse",
+    "visual_features": "鼠标",
+    "core_semantic": "鼠标",
+    "use_cases": ["外设", "点击"],
+    "synonyms": ["mouse"]
+  },
+  {
+    "component_name": "connection",
+    "visual_features": "连接/网络节点",
+    "core_semantic": "连接/网络",
+    "use_cases": ["互联网", "关联"],
+    "synonyms": ["connection"]
+  },
+  {
+    "component_name": "credit-card",
+    "visual_features": "信用卡",
+    "core_semantic": "信用卡/支付",
+    "use_cases": ["付款", "金融"],
+    "synonyms": ["credit card"]
+  },
+  {
+    "component_name": "dislike",
+    "visual_features": "拇指向下/倒赞",
+    "core_semantic": "不喜欢/踩",
+    "use_cases": ["负面评价"],
+    "synonyms": ["dislike", "thumbs down"]
+  },
+  {
+    "component_name": "display",
+    "visual_features": "显示器",
+    "core_semantic": "显示屏",
+    "use_cases": ["电脑", "监视器"],
+    "synonyms": ["display", "monitor"]
+  },
+  {
+    "component_name": "document",
+    "visual_features": "文档/纸张",
+    "core_semantic": "文档",
+    "use_cases": ["文件", "文本"],
+    "synonyms": ["document"]
+  },
+  {
+    "component_name": "download",
+    "visual_features": "向下箭头+横杠",
+    "core_semantic": "下载",
+    "use_cases": ["获取文件"],
+    "synonyms": ["download"]
+  },
+  {
+    "component_name": "earth",
+    "visual_features": "地球/世界",
+    "core_semantic": "全球/互联网",
+    "use_cases": ["语言", "国际化"],
+    "synonyms": ["earth", "globe"]
+  },
+  {
+    "component_name": "export",
+    "visual_features": "从盒子向外的箭头",
+    "core_semantic": "导出",
+    "use_cases": ["数据导出", "分享"],
+    "synonyms": ["export"]
+  },
+  {
+    "component_name": "fast-forward",
+    "visual_features": "双向右箭头/快进",
+    "core_semantic": "快进",
+    "use_cases": ["视频快进", "跳过"],
+    "synonyms": ["fast forward"]
+  },
+  {
+    "component_name": "fast-rewind",
+    "visual_features": "双向左箭头/快退",
+    "core_semantic": "快退",
+    "use_cases": ["视频回退"],
+    "synonyms": ["fast rewind"]
+  },
+  {
+    "component_name": "file",
+    "visual_features": "文件（折角纸张）",
+    "core_semantic": "文件",
+    "use_cases": ["文件管理"],
+    "synonyms": ["file"]
+  },
+  {
+    "component_name": "film",
+    "visual_features": "胶片",
+    "core_semantic": "胶片/电影",
+    "use_cases": ["视频编辑"],
+    "synonyms": ["film"]
+  },
+  {
+    "component_name": "first-frame",
+    "visual_features": "跳到最前/开始",
+    "core_semantic": "第一帧",
+    "use_cases": ["视频起始"],
+    "synonyms": ["first frame"]
+  },
+  {
+    "component_name": "flash-disk",
+    "visual_features": "U盘/闪存盘",
+    "core_semantic": "U盘",
+    "use_cases": ["存储", "转移数据"],
+    "synonyms": ["flash disk", "USB"]
+  },
+  {
+    "component_name": "folder",
+    "visual_features": "文件夹",
+    "core_semantic": "文件夹",
+    "use_cases": ["文件组织"],
+    "synonyms": ["folder"]
+  },
+  {
+    "component_name": "headset",
+    "visual_features": "头戴式耳机",
+    "core_semantic": "耳机/耳麦",
+    "use_cases": ["音频", "通话"],
+    "synonyms": ["headset"]
+  },
+  {
+    "component_name": "image",
+    "visual_features": "图片/山景图",
+    "core_semantic": "图像",
+    "use_cases": ["照片", "图片库"],
+    "synonyms": ["image", "picture"]
+  },
+  {
+    "component_name": "import",
+    "visual_features": "从外指向盒子的箭头",
+    "core_semantic": "导入",
+    "use_cases": ["数据导入"],
+    "synonyms": ["import"]
+  },
+  {
+    "component_name": "internet",
+    "visual_features": "网络/地球联网",
+    "core_semantic": "互联网",
+    "use_cases": ["在线", "连接"],
+    "synonyms": ["internet"]
+  },
+  {
+    "component_name": "keyboard",
+    "visual_features": "键盘",
+    "core_semantic": "键盘",
+    "use_cases": ["输入设备"],
+    "synonyms": ["keyboard"]
+  },
+  {
+    "component_name": "laptop",
+    "visual_features": "笔记本电脑",
+    "core_semantic": "笔记本",
+    "use_cases": ["便携电脑"],
+    "synonyms": ["laptop"]
+  },
+  {
+    "component_name": "last-frame",
+    "visual_features": "跳到末尾",
+    "core_semantic": "最后一帧",
+    "use_cases": ["视频结尾"],
+    "synonyms": ["last frame"]
+  },
+  {
+    "component_name": "like",
+    "visual_features": "拇指向上/点赞",
+    "core_semantic": "喜欢/赞",
+    "use_cases": ["好评", "赞同"],
+    "synonyms": ["like", "thumbs up"]
+  },
+  {
+    "component_name": "link-02",
+    "visual_features": "链接图标变体",
+    "core_semantic": "超链接",
+    "use_cases": ["网页链接"],
+    "synonyms": ["link"]
+  },
+  {
+    "component_name": "link",
+    "visual_features": "链环/连接",
+    "core_semantic": "链接",
+    "use_cases": ["超链接", "关联"],
+    "synonyms": ["link"]
+  },
+  {
+    "component_name": "live-02",
+    "visual_features": "直播图标变体",
+    "core_semantic": "实时/直播",
+    "use_cases": ["流媒体"],
+    "synonyms": ["live"]
+  },
+  {
+    "component_name": "live",
+    "visual_features": "直播/广播信号",
+    "core_semantic": "直播",
+    "use_cases": ["实时播放"],
+    "synonyms": ["live"]
+  },
+  {
+    "component_name": "location",
+    "visual_features": "位置标记/水滴形地点",
+    "core_semantic": "定位",
+    "use_cases": ["地图标记", "导航"],
+    "synonyms": ["location", "pin"]
+  },
+  {
+    "component_name": "mail",
+    "visual_features": "信封",
+    "core_semantic": "邮件/邮箱",
+    "use_cases": ["电子邮件", "消息"],
+    "synonyms": ["mail", "email"]
+  },
+  {
+    "component_name": "memory-card",
+    "visual_features": "SD存储卡",
+    "core_semantic": "存储卡",
+    "use_cases": ["扩展存储", "相机"],
+    "synonyms": ["memory card"]
+  },
+  {
+    "component_name": "mention",
+    "visual_features": "@ 符号/提及",
+    "core_semantic": "提及/艾特",
+    "use_cases": ["社交提及", "通知"],
+    "synonyms": ["mention", "@"]
+  },
+  {
+    "component_name": "message-02",
+    "visual_features": "消息气泡变体",
+    "core_semantic": "聊天/消息",
+    "use_cases": ["短信"],
+    "synonyms": ["message"]
+  },
+  {
+    "component_name": "message",
+    "visual_features": "消息气泡",
+    "core_semantic": "消息",
+    "use_cases": ["聊天", "评论"],
+    "synonyms": ["message", "chat"]
+  },
+  {
+    "component_name": "mic",
+    "visual_features": "麦克风",
+    "core_semantic": "麦克风/录音",
+    "use_cases": ["语音输入", "录音"],
+    "synonyms": ["mic", "microphone"]
+  },
+  {
+    "component_name": "microchip",
+    "visual_features": "芯片/集成电路",
+    "core_semantic": "微芯片",
+    "use_cases": ["硬件", "处理器"],
+    "synonyms": ["microchip", "chip"]
+  },
+  {
+    "component_name": "mobile-data",
+    "visual_features": "移动数据/信号条",
+    "core_semantic": "蜂窝数据",
+    "use_cases": ["网络连接"],
+    "synonyms": ["mobile data"]
+  },
+  {
+    "component_name": "mobile-phone",
+    "visual_features": "智能手机",
+    "core_semantic": "手机",
+    "use_cases": ["移动设备"],
+    "synonyms": ["mobile phone", "smartphone"]
+  },
+  {
+    "component_name": "music-02",
+    "visual_features": "音乐符号变体",
+    "core_semantic": "音乐",
+    "use_cases": ["音频"],
+    "synonyms": ["music"]
+  },
+  {
+    "component_name": "music",
+    "visual_features": "音符 ♪",
+    "core_semantic": "音乐",
+    "use_cases": ["播放器", "歌曲"],
+    "synonyms": ["music", "note"]
+  },
+  {
+    "component_name": "mute",
+    "visual_features": "扬声器+禁止符号",
+    "core_semantic": "静音",
+    "use_cases": ["关闭声音"],
+    "synonyms": ["mute"]
+  },
+  {
+    "component_name": "next-frame",
+    "visual_features": "下一帧/单步前进",
+    "core_semantic": "下一帧",
+    "use_cases": ["视频逐帧前进"],
+    "synonyms": ["next frame"]
+  },
+  {
+    "component_name": "next",
+    "visual_features": "下一个/右三角+竖线",
+    "core_semantic": "下一曲/下一个",
+    "use_cases": ["播放下一项"],
+    "synonyms": ["next", "skip forward"]
+  },
+  {
+    "component_name": "no-music-02",
+    "visual_features": "禁止音乐变体",
+    "core_semantic": "无音乐",
+    "use_cases": ["禁用音乐"],
+    "synonyms": ["no music"]
+  },
+  {
+    "component_name": "no-music",
+    "visual_features": "音符+禁止斜杠",
+    "core_semantic": "禁止播放音乐",
+    "use_cases": ["关掉音乐"],
+    "synonyms": ["no music"]
+  },
+  {
+    "component_name": "notification",
+    "visual_features": "铃铛/通知",
+    "core_semantic": "通知",
+    "use_cases": ["提醒", "消息提示"],
+    "synonyms": ["notification", "bell"]
+  },
+  {
+    "component_name": "paper",
+    "visual_features": "纸张/文档",
+    "core_semantic": "文档",
+    "use_cases": ["文件"],
+    "synonyms": ["paper"]
+  },
+  {
+    "component_name": "pause",
+    "visual_features": "暂停双竖线",
+    "core_semantic": "暂停",
+    "use_cases": ["暂停播放"],
+    "synonyms": ["pause"]
+  },
+  {
+    "component_name": "pc-host",
+    "visual_features": "电脑主机/服务器",
+    "core_semantic": "主机/服务器",
+    "use_cases": ["数据中心", "硬件"],
+    "synonyms": ["pc host", "server"]
+  },
+  {
+    "component_name": "phone",
+    "visual_features": "电话听筒",
+    "core_semantic": "电话/呼叫",
+    "use_cases": ["拨号", "联系"],
+    "synonyms": ["phone", "telephone"]
+  },
+  {
+    "component_name": "play",
+    "visual_features": "播放三角 ▶",
+    "core_semantic": "播放",
+    "use_cases": ["开始播放"],
+    "synonyms": ["play"]
+  },
+  {
+    "component_name": "power-switch",
+    "visual_features": "电源开关符号",
+    "core_semantic": "电源",
+    "use_cases": ["开关机"],
+    "synonyms": ["power"]
+  },
+  {
+    "component_name": "previous-frame",
+    "visual_features": "上一帧/单步后退",
+    "core_semantic": "上一帧",
+    "use_cases": ["视频逐帧后退"],
+    "synonyms": ["previous frame"]
+  },
+  {
+    "component_name": "previous",
+    "visual_features": "上一个/左三角+竖线",
+    "core_semantic": "上一曲/上一个",
+    "use_cases": ["播放前一项"],
+    "synonyms": ["previous", "skip back"]
+  },
+  {
+    "component_name": "protect",
+    "visual_features": "盾牌+对勾/锁",
+    "core_semantic": "保护/安全",
+    "use_cases": ["防病毒", "加密"],
+    "synonyms": ["protect", "security"]
+  },
+  {
+    "component_name": "qr-code-02",
+    "visual_features": "二维码变体",
+    "core_semantic": "QR码",
+    "use_cases": ["扫码"],
+    "synonyms": ["qr code"]
+  },
+  {
+    "component_name": "qr-code",
+    "visual_features": "二维码",
+    "core_semantic": "二维码",
+    "use_cases": ["识别", "支付"],
+    "synonyms": ["qr code"]
+  },
+  {
+    "component_name": "record",
+    "visual_features": "录制圆点/红色圆圈",
+    "core_semantic": "录制",
+    "use_cases": ["开始录音/录像"],
+    "synonyms": ["record"]
+  },
+  {
+    "component_name": "recording",
+    "visual_features": "正在录制指示（闪烁点）",
+    "core_semantic": "录制中",
+    "use_cases": ["录音中提示"],
+    "synonyms": ["recording"]
+  },
+  {
+    "component_name": "scan",
+    "visual_features": "扫描框/扫一扫",
+    "core_semantic": "扫描",
+    "use_cases": ["扫码", "文档扫描"],
+    "synonyms": ["scan"]
+  },
+  {
+    "component_name": "share-02",
+    "visual_features": "分享变体（网络分享）",
+    "core_semantic": "分享",
+    "use_cases": ["社交分享"],
+    "synonyms": ["share"]
+  },
+  {
+    "component_name": "share",
+    "visual_features": "分享箭头（从盒子指出）",
+    "core_semantic": "分享",
+    "use_cases": ["转发", "推荐"],
+    "synonyms": ["share"]
+  },
+  {
+    "component_name": "silent",
+    "visual_features": "静音模式（铃铛+斜杠）",
+    "core_semantic": "静音/免打扰",
+    "use_cases": ["手机静音"],
+    "synonyms": ["silent", "vibrate"]
+  },
+  {
+    "component_name": "stop",
+    "visual_features": "停止方块 ⏹",
+    "core_semantic": "停止",
+    "use_cases": ["停止播放"],
+    "synonyms": ["stop"]
+  },
+  {
+    "component_name": "tablet",
+    "visual_features": "平板电脑",
+    "core_semantic": "平板",
+    "use_cases": ["移动设备"],
+    "synonyms": ["tablet"]
+  },
+  {
+    "component_name": "tag",
+    "visual_features": "标签",
+    "core_semantic": "标签/分类",
+    "use_cases": ["标记", "类别"],
+    "synonyms": ["tag", "label"]
+  },
+  {
+    "component_name": "time",
+    "visual_features": "时间/钟表",
+    "core_semantic": "时间",
+    "use_cases": ["时长", "时间戳"],
+    "synonyms": ["time"]
+  },
+  {
+    "component_name": "trash",
+    "visual_features": "垃圾桶",
+    "core_semantic": "删除/回收站",
+    "use_cases": ["删除文件"],
+    "synonyms": ["trash", "delete", "bin"]
+  },
+  {
+    "component_name": "upload",
+    "visual_features": "向上箭头+横杠",
+    "core_semantic": "上传",
+    "use_cases": ["上传文件"],
+    "synonyms": ["upload"]
+  },
+  {
+    "component_name": "video",
+    "visual_features": "摄像机/录像带",
+    "core_semantic": "视频",
+    "use_cases": ["视频播放", "录制"],
+    "synonyms": ["video"]
+  },
+  {
+    "component_name": "volume",
+    "visual_features": "扬声器音波",
+    "core_semantic": "音量",
+    "use_cases": ["调节音量"],
+    "synonyms": ["volume", "speaker"]
+  },
+  {
+    "component_name": "watch",
+    "visual_features": "手表/智能手表",
+    "core_semantic": "手表",
+    "use_cases": ["时间", "穿戴设备"],
+    "synonyms": ["watch"]
+  },
+  {
+    "component_name": "webcam",
+    "visual_features": "网络摄像头",
+    "core_semantic": "摄像头",
+    "use_cases": ["视频通话"],
+    "synonyms": ["webcam"]
+  },
+  {
+    "component_name": "wi-fi",
+    "visual_features": "Wi-Fi 信号弧线",
+    "core_semantic": "无线网络",
+    "use_cases": ["WiFi 连接"],
+    "synonyms": ["wifi", "wireless"]
+  }
+]
