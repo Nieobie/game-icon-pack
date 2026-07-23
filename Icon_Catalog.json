@@ -1,5 +1,5 @@
 [
-  // ==================== 1-game ====================
+  
   {
     "component_name": "action-points",
     "visual_features": "纯文本「AP」",
@@ -519,7 +519,7 @@
     "synonyms": ["trophy", "奖杯", "成就", "胜利", "冠军"]
   },
 
-  // ==================== 10-editing ====================
+  
   {
     "component_name": "align-bottom-02",
     "visual_features": "三个填充矩形（按钮风格）底部对齐",
@@ -934,7 +934,7 @@
     "synonyms": ["undo", "撤销", "后退", "↶"]
   },
 
-  // ==================== 11-symbols ====================
+  
   {
     "component_name": "A-to-Z",
     "visual_features": "纯文本「A-Z」",
@@ -1587,7 +1587,7 @@
     "synonyms": ["元", "yuan", "人民币"]
   },
 
-  // ==================== 12-misc ====================
+  
   {
     "component_name": "acute-triangle",
     "visual_features": "填充的等腰锐角三角形",
@@ -2030,8 +2030,8 @@
     "synonyms": ["triangle", "三角形", "直角三角形"]
   },
 
-  // ==================== 2-items ====================
-  // 前半部分来自原始录入，后半部分为对话补充修正
+  
+  
   {
     "component_name": "attach",
     "visual_features": "回形针",
@@ -2411,7 +2411,7 @@
     "synonyms": ["wrench", "扳手"]
   },
 
-  // ==================== 3-gear ====================
+  
   {
     "component_name": "arrow",
     "visual_features": "向上的箭矢",
@@ -2685,7 +2685,7 @@
     "use_cases": ["施法", "魔法攻击"],
     "synonyms": ["wand", "法杖", "魔杖"]
   },
-  // warrior 系列省略视觉特征，仅给出语义
+  
   {
     "component_name": "warrior-belt-lv1",
     "visual_features": "战士腰带等级1",
@@ -2883,7 +2883,7 @@
     "synonyms": ["warrior shoulders lv4"]
   },
 
-  // ==================== 4-nature ====================
+  
   {
     "component_name": "animal",
     "visual_features": "爪子印",
@@ -2961,7 +2961,7 @@
     "use_cases": ["材料", "建筑"],
     "synonyms": ["wood", "原木"]
   },
-  // 其余自然图标基于名称推断
+  
   {
     "component_name": "cactus",
     "visual_features": "仙人掌",
@@ -3362,7 +3362,7 @@
     "synonyms": ["wolf"]
   },
 
-  // ==================== 5-food ====================
+  
   {
     "component_name": "a-bottle-of-water",
     "visual_features": "有盖子的水壶",
@@ -3630,7 +3630,7 @@
     "synonyms": ["zongzi", "粽子"]
   },
 
-  // ==================== 6-buildings ====================
+  
   {
     "component_name": "air-conditioner",
     "visual_features": "空调室内机",
@@ -4003,7 +4003,7 @@
     "synonyms": ["washing machine"]
   },
 
-  // ==================== 7-vehicles ====================
+  
   {
     "component_name": "anchor",
     "visual_features": "船锚",
@@ -4404,7 +4404,7 @@
     "synonyms": ["wheel"]
   },
 
-  // ==================== 8-ui ====================
+  
   {
     "component_name": "adjustment",
     "visual_features": "两根线 + 两个高度不同的长方形",
@@ -4412,7 +4412,7 @@
     "use_cases": ["参数调整", "亮度/音量控制"],
     "synonyms": ["adjustment", "滑块"]
   },
-  // 箭头系列：基础圆润，02 较尖，03 V 形无垂直线
+  
   {
     "component_name": "arrow-down-02",
     "visual_features": "向下的尖锐箭头",
@@ -5107,7 +5107,7 @@
     "synonyms": ["zoom out"]
   },
 
-  // ==================== 9-media ====================
+  
   {
     "component_name": "audio-waves",
     "visual_features": "声波图形（多条竖线或波形）",
