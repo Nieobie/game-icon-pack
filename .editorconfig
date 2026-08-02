@@ -1,0 +1,43 @@
+# EditorConfig 配置文件
+# 官网：https://editorconfig.org/
+
+# 顶层配置，表示这是根配置文件，编辑器不再向上寻找
+root = true
+
+# 通配符：匹配所有文件
+[*]
+# 字符编码
+charset = utf-8
+# 缩进风格：space（空格） 或 tab（制表符）
+indent_style = space
+# 缩进大小：2 个空格（可按项目习惯改为 4）
+indent_size = 2
+# 行尾换行符：lf（Unix/Linux/macOS） 或 crlf（Windows）
+end_of_line = crlf
+# 文件末尾插入一个空行
+insert_final_newline = true
+# 删除行尾多余空格
+trim_trailing_whitespace = true
+
+# 针对特定文件类型的覆盖配置
+
+# Markdown 文件：保留行尾空格（用于换行），末尾不加空行
+[*.md]
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+# YAML 文件：2 空格缩进
+[*.{yml,yaml}]
+indent_size = 2
+
+# JSON 文件：2 空格缩进
+[*.json]
+indent_size = 2
+
+# Shell 脚本：必须使用 Tab 缩进
+[*.sh]
+indent_style = tab
+
+# 前端框架单文件组件
+[*.{vue,jsx,tsx}]
+indent_size = 2

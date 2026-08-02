@@ -19,6 +19,30 @@
 
 
 ## 预览
+
+### 在线预览（GitHub Pages）
+图标包通过 GitHub Actions 自动构建并部署到 GitHub Pages。  
+访问：**https://nieobie.github.io/game-icon-pack**（或本 fork 的 Pages 地址：https://cyojkoy.github.io/game-icon-pack/ ）
+
+每次推送到 `main` 分支都会触发自动构建，在线预览会始终保持最新。
+
+### 本地预览
+
+想更方便地浏览和搜索所有图标吗？
+
+1. 安装 [Node.js](https://nodejs.org/)。
+2. 在项目文件夹中打开终端，运行：
+
+```bash
+node server.js
+```
+
+3. 在浏览器中打开 **http://localhost:3000**。
+
+> **说明：** 本地预览使用内置服务器（`server.js`）。如需静态部署，项目中已包含构建脚本（`scripts/generate-static.js`）和 GitHub Actions 工作流（`.github/workflows/deploy.yml`），可自动生成静态资源（`data.json` + `svg/`）并部署到 GitHub Pages。
+
+
+## 预览图
 <img width="100%" alt="ICONS- 2" src="https://github.com/user-attachments/assets/19e559ac-8122-4462-8cb5-fa6253fa5b77" />
 
 
@@ -36,19 +60,6 @@
 
 该 JSON 文件与图标包同步更新，方便您集成到自己的工具链或游戏编辑器中。
 
-
-## 本地预览
-
-想更方便地浏览和搜索所有图标吗？
-
-1. 安装 [Node.js](https://nodejs.org/)。
-2. 在项目文件夹中打开终端，运行：
-
-```bash
-node server.js
-```
-
-3. 在浏览器中打开 **http://localhost:3000**。
 
 ## 请求
 如果您有图标需求、建议或想法，欢迎提交 Issue。

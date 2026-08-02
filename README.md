@@ -19,6 +19,30 @@ Or download from [**Releases**](https://github.com/Nieobie/game-icon-pack/releas
 
 
 ## Preview
+
+### Online Preview (GitHub Pages)
+The icon pack is automatically built and deployed to GitHub Pages via GitHub Actions.  
+Visit: **https://nieobie.github.io/game-icon-pack** (or this fork's Pages URL: https://cyojkoy.github.io/game-icon-pack/ )
+
+Every push to the `main` branch triggers a new build, so the online preview stays up to date.
+
+### Local Preview
+
+Want to browse and search all icons more easily?
+
+1. Install [Node.js](https://nodejs.org/).
+2. Open a terminal in the project folder and run:
+
+```bash
+node server.js
+```
+
+3. Open **http://localhost:3000** in your browser.
+
+> **Note:** The local preview uses the built-in server (`server.js`). For static deployment, the project includes a `scripts/generate-static.js` build script and a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically generates static assets (`data.json` + `svg/`) and deploys them to GitHub Pages.
+
+
+## Preview Image
 <img width="100%" alt="ICONS- 2" src="https://github.com/user-attachments/assets/19e559ac-8122-4462-8cb5-fa6253fa5b77" />
 
 
@@ -36,19 +60,6 @@ A `Icon_Catalog.json` is provided in the root directory for programmatic retriev
 
 This JSON file stays updated with the icon pack, making it easy to integrate into your own toolchains or game editors.
 
-
-## Local Preview
-
-Want to browse and search all icons more easily?
-
-1. Install [Node.js](https://nodejs.org/).
-2. Open a terminal in the project folder and run:
-
-```bash
-node server.js
-```
-
-3. Open **http://localhost:3000** in your browser.
 
 ## Requests
 If you have icon requests, suggestions, or ideas, feel free to open an Issue.
